@@ -2,8 +2,9 @@ init:
     #персонажи
     $ mom = Character(u'Мама', color="#E6E6FA", what_color="E2C778")
     $ vi = Character(u'Виталий', color="#E6E6FA", what_color="E2C778")
-    $ va = Character(u'Виталий', color="#E6E6FA", what_color="E2C778")
-
+    $ va = Character(u'Вадим', color="#E6E6FA", what_color="E2C778")
+    $ v = Character(u'Голоса', color="#E6E6FA", what_color="E2C778", kind=nvl)
+    $ vi_n = Character(u'Виталий:', color="#E6E6FA", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed")
     #спрайты
     image se angry = "mods/four_horizons/Дополнительные спрайты/sem/se_Angry.png"
     image se grin = "mods/four_horizons/Дополнительные спрайты/sem/se_Grin.png"
