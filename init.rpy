@@ -50,3 +50,7 @@ init:
     image bg park = "mods/four_horizons/Фоны/park.jpg"
     image bg stadion = "mods/four_horizons/Фоны/stadion.jpg"
     image bg stadion2 = "mods/four_horizons/Фоны/stadion2.jpg"
+
+init python:
+    heart = 'mods/four_horizons/Музыка/ambi/heart.mp3'
+    mgs = 'mods/four_horizons/Музыка/ambi/mgs.mp3'
