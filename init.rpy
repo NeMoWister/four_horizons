@@ -1,10 +1,16 @@
 init:
     #персонажи
-    $ mom = Character(u'Мама', color="#E6E6FA", what_color="E2C778")
-    $ vi = Character(u'Виталий', color="#E6E6FA", what_color="E2C778")
-    $ va = Character(u'Вадим', color="#E6E6FA", what_color="E2C778")
+    $ mom = Character(u'Мама', color="#e9ff57", what_color="E2C778")
+    $ doc = Character(u'Доктор', color="#454545", what_color="E2C778")
+    $ doc1 = Character(u'Медсестра', color="#247ba6", what_color="E2C778")
+    $ vi = Character(u'Виталий', color="#013d00", what_color="E2C778")
+    $ vito = Character(u'Вито', color="#042604", what_color="E2C778")#042604
+    $ va = Character(u'Вадим', color="#ffffff", what_color="E2C778")
     $ v = Character(u'Голоса', color="#E6E6FA", what_color="E2C778", kind=nvl)
-    $ vi_n = Character(u'Виталий:', color="#E6E6FA", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed")
+    $ vi_n = Character(u'Виталий:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed")
+    $ ge = Character(u'Георгий:', color="#331d01", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed")
+    $ re = Character(u'Регистратор', color="#331d01", what_color="E2C778")
+    #331d01 - отец
     #спрайты
     image se angry = "mods/four_horizons/Дополнительные спрайты/sem/se_Angry.png"
     image se grin = "mods/four_horizons/Дополнительные спрайты/sem/se_Grin.png"
@@ -16,6 +22,12 @@ init:
     image se upset = "mods/four_horizons/Дополнительные спрайты/sem/se_Upset.png"
 
     #фоны
+    image bg ext_stage_big_night = 'mods/four_horizons/Фоны/ext_stage_big_night.jpg'
+    image bg int_musclub_sunset = 'mods/four_horizons/Фоны/int_musclub_sunset.png'
+    image bg obs_ext_musclub_verandah_sunset = 'mods/four_horizons/Фоны/obs_ext_musclub_verandah_sunset.png'
+    image bg ext_musclub_night_7dl = 'mods/four_horizons/Фоны/ext_musclub_night_7dl.jpg'
+    image bg int_musclub_night_light = 'mods/four_horizons/Фоны/int_musclub_night_light.png'
+    image bg d5_musclub1_night = 'mods/four_horizons/Фоны/d5_musclub1_night.jpg'
     image bg 1022-2 = "mods/four_horizons/Фоны/1022-2.jpg"
     image bg alex_room_day = "mods/four_horizons/Фоны/alex_room_day.jpg"
     image bg alex_room_night = "mods/four_horizons/Фоны/alex_room_night.jpg"
