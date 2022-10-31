@@ -10,7 +10,13 @@ init:
     $ vi_n = Character(u'Виталий:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed")
     $ ge = Character(u'Георгий:', color="#331d01", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed")
     $ re = Character(u'Регистратор', color="#331d01", what_color="E2C778")
-    #331d01 - отец
+
+    $ al = Character(u'Алексей', color="#013d00", what_color="E2C778")
+    $ vas = Character(u'Василий', color="#013d00", what_color="E2C778")
+    $ al_n = Character(u'Алексей:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed")
+    $ vas_n = Character(u'Василий:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed")
+
+
     #спрайты
     image se angry = "mods/four_horizons/Дополнительные спрайты/sem/se_Angry.png"
     image se grin = "mods/four_horizons/Дополнительные спрайты/sem/se_Grin.png"

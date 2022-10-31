@@ -1,5 +1,5 @@
 init:
-    $ mods["four_horizons"] = u"Четыре Горизонта."
+    $ mods["four_horizons"] = u"Четыре Горизонта. Лена."
     $config.developer = True
 
 label four_horizons:
@@ -1969,7 +1969,7 @@ label four_horizons:
     vi 'Пошли.'
     play sound sfx_shoulder_dive_water
     'Мы вместе побежали и прыгнули в воду.'
-    show expression 'mods/four_horizons/Фоны/pod_vodoj_glubina_dno_139714_1920x1080.jpg' as water with flash
+    show expression 'mods/four_horizons/Фоны/under.jpg' as water with flash
     'Вода была восхитительная. Теплая, а главное кристально чистая. Словно тут никогда никаких загрязнений не было.'
     th 'Пускай так и остаётся. Хотя бы тут.'
     'Мы плавали возле друг друга, словно два влюблённых дельфина.'
