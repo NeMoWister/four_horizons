@@ -28,6 +28,7 @@ init:
     image se upset = "mods/four_horizons/Дополнительные спрайты/sem/se_Upset.png"
 
     #фоны
+    image bg int_din_sunset = 'mods/four_horizons/Фоны/int_din_sunset.jpg'
     image bg obs_int_musclub_mattresses_night = 'mods/four_horizons/Фоны/obs_int_musclub_mattresses_night.png'
     image bg ext_house_of_un_night_7dl = 'mods/four_horizons/Фоны/ext_house_of_un_night_7dl.jpg'
     image bg ext_un_house_sunset = 'mods/four_horizons/Фоны/ext_un_house_sunset.png'
