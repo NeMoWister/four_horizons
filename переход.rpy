@@ -1,37 +1,27 @@
-﻿# Вы можете расположить сценарий своей игры в этом файле.
-
-# Определение персонажей игры.
-define e = Character('Эйлин', color="#c8ffc8")
 define test = ImageDissolve('huynya2.png', 10.0)
 define test2 = AlphaDissolve('huynya2.png', 10.0)
-# Вместо использования оператора image можете просто
-# складывать все ваши файлы изображений в папку images.
-# Например, сцену bg room можно вызвать файлом "bg room.png",
-# а eileen happy — "eileen happy.webp", и тогда они появятся в игре.
 
 init:
-    image h = 'huynya2.png'
+    image h = 'mods/four_horizons/huynya2.png'
     image bg alex_room_day = 'alex_room_day.jpg'
     image cg 1022 = '1022-2.jpg'
 
+init python:
+    def f_trans(cgn, bgn, spn):
+        renpy.scene(cgn)
+        renpy.scene(bgn)
+        renpy.show(spn)
+        renpy.with_statement(test2)
+
+    def f_trans2(cgn, bgn, spn):
+        renpy.jump('f_trans3')
+
 # Игра начинается здесь:
-label start:
-
-    scene cg 1022
-    '.'
-    show h
-    '.'
-    show bg alex_room_day
-    '.'
-
-
-    scene cg 1022
-    '.'
-    scene bg alex_room_day
-    show eileen happy at right
+label f_trans3:
+    scene cgn
+    scene bgn
+    show spn:
+        xalign 0.8
     with test2
-    e "Вы создали новую игру Ren'Py."
-
-    e "Добавьте сюжет, изображения и музыку и отправьте её в мир!"
-
+    scene black with pixellate
     return
