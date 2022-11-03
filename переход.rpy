@@ -1,27 +1,16 @@
-define test = ImageDissolve('huynya2.png', 10.0)
-define test2 = AlphaDissolve('huynya2.png', 10.0)
-
-init:
-    image h = 'mods/four_horizons/huynya2.png'
-    image bg alex_room_day = 'alex_room_day.jpg'
-    image cg 1022 = '1022-2.jpg'
-
-init python:
-    def f_trans(cgn, bgn, spn):
-        renpy.scene(cgn)
-        renpy.scene(bgn)
-        renpy.show(spn)
-        renpy.with_statement(test2)
-
-    def f_trans2(cgn, bgn, spn):
-        renpy.jump('f_trans3')
-
-# Игра начинается здесь:
-label f_trans3:
-    scene cgn
-    scene bgn
-    show spn:
-        xalign 0.8
-    with test2
-    scene black with pixellate
+label imGAY(cgn, bgn, spn, dayn):
+    scene black with dissolve
+    pause 1
+    scene expression cgn:
+        xpos -700
+    show expression AlphaMask(bgn, 'mods/four_horizons/huynya2.png'):
+        blur 10
+    show expression spn:
+        xpos 1070
+    show text '{font=mods/four_horizons/GothicRus2.ttf}{size=90}{color=#8B00FF}[dayn]{/size}{/font}{/color}':
+        xalign 0.99
+        yalign 0.8
+    with dissolve2
+    pause 3
+    show black with moveinright
     return

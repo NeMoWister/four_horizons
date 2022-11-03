@@ -1798,7 +1798,7 @@ label four_horizons_dv:
     'Мы получили три порции на ужин и сели есть. На ужин были макароны с мясом и компот.'
     show dv normal pioneer
     show un normal pioneer
-     with dspr
+    with dspr
     dv 'Так что ты предлагаешь?'
     al 'Раз мы все тут современные. Тогда я предлагаю исполнить вот эту песню.'
     'Я достал им мобильник и показал название песни.'
@@ -2337,7 +2337,7 @@ label four_horizons_dv:
     scene bg int_musclub_day with dissolve
     show dv smile pioneer with dspr
     'Зайдя внутрь, мы заметили, что ребята устроили себе комнату отдыха.'
-    show un normal pioneer at left far with dspr
+    show un normal pioneer far at left with dspr
     'Лена сидела и рисовала в своей тетрадке что-то.'
     th 'Хотя, чему я удивляюсь, она же художница.'
     show mi normal pioneer far at cright
