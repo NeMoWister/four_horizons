@@ -4,7 +4,6 @@ init:
     $ config.gl2 = True
 
 label four_horizons_un:
-    $ four_horizons_update_status('Пролог', 'День рождение.')
     scene black with dissolve
     $ prolog_time()
     $ new_chapter(-1, u"История Виталия.\nПролог.\nДень рождение.")
