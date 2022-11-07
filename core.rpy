@@ -103,3 +103,89 @@ label imGAY(cgn, bgn, spn, dayn, cgpos, textpos):
     pause 3
     show black with moveinright
     return
+
+
+init -99999999999999999999999999999 python:
+    import discord_rpc
+    import time
+
+    def readyCallback(current_user):
+        print('Our user: {}'.format(current_user))
+
+    def disconnectedCallback(codeno, codemsg):
+        print('Disconnected from Discord rich presence RPC. Code {}: {}'.format(
+            codeno, codemsg
+        ))
+
+    def errorCallback(errno, errmsg):
+        print('An error occurred! Error {}: {}'.format(
+            errno, errmsg
+        ))
+
+label before_main_menu:
+    python:
+        # Note: 'event_name': callback
+        callbacks = {
+            'ready': readyCallback,
+            'disconnected': disconnectedCallback,
+            'error': errorCallback,
+        }
+        discord_rpc.initialize('1039050589784526978', callbacks=callbacks, log=False)
+        start = time.time()
+        print(start)
+        discord_rpc.update_connection()
+        discord_rpc.run_callbacks()
+        discord_rpc.update_presence(
+            **{
+                'details': 'Главное меню.',
+                'start_timestamp': start,
+                'large_image_key': 'None'
+            }
+        )
+        discord_rpc.update_connection()
+        discord_rpc.run_callbacks()
+
+    return
+
+
+label four_horizons:
+    python:
+        callbacks = {
+            'ready': readyCallback,
+            'disconnected': disconnectedCallback,
+            'error': errorCallback,
+        }
+        discord_rpc.initialize('1039050589784526978', callbacks=callbacks, log=False)
+        start = time.time()
+        discord_rpc.update_connection()
+        discord_rpc.run_callbacks()
+        discord_rpc.update_presence(
+            **{
+                'details': 'At College',
+                'state': 'Lecture Hall',
+                'large_image_key': 'None',
+                'start_timestamp': start
+            }
+        )
+
+        discord_rpc.update_connection()
+        discord_rpc.run_callbacks()
+    jump four_horizons_un
+
+
+def four_horizons_update_status(dayf, namef):
+    python:
+        start = time.time()
+        discord_rpc.update_connection()
+        discord_rpc.run_callbacks()
+        discord_rpc.update_presence(
+            **{
+                'details': dayf,
+                'state': namef,
+                'large_image_key': 'None',
+                'start_timestamp': start
+            }
+        )
+
+        discord_rpc.update_connection()
+        discord_rpc.run_callbacks()
