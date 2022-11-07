@@ -1102,7 +1102,7 @@ label four_horizons:
     scene black
     #день 2
     $ persistent.sprite_time = 'sunset'
-    call imGAY('mods/four_horizons/cg/dance_night.png', 'bg ext_beach_sunset', 'un serious pioneer', 'День второй.\nМы будем вместе.', 500, 0.99)
+    call imGAY('mods/four_horizons/cg/dance_night.png', 'bg ext_beach_sunset', 'un serious pioneer', 'День второй.\nМы будем вместе.', 500, 0.92)
     $ new_chapter(2, u"День второй.\n Мы будем вместе.")
     $ day_time()
     $ persistent.sprite_time = 'day'
@@ -2508,7 +2508,7 @@ label four_horizons:
     'Я только-только, начал засыпать, как почувствовал, что кто-то лёг ко мне в кровать.'
     'Да и не просто лёг, а пристроился на моем плече и прижался ко мне всем своим телом.'
     'У меня не было сил, чтобы открыть глаза и поэтому ответ на свой вопрос, я оставил за завтрашнее утро.'
-    call imGAY('mods/four_horizons/cg/un_hug_day.png', 'bg ext_island_day', 'un shy pioneer', 'День третий.\nМоя луна.', 300, 0.93)
+    call imGAY('mods/four_horizons/cg/un_hug_day.png', 'bg ext_island_day', 'un shy pioneer', 'День третий.\nМоя луна.', 300, 0.89)
     $ new_chapter(3, u"День третий.\nМоя луна.")
     $ day_time()
     $ persistent.sprite_time = 'day'
@@ -3675,7 +3675,7 @@ label four_horizons:
     un 'Я тебя тоже сильно-сильно люблю.'
     'Лена закрыла глазки и начала засыпать. А я какое-то время ещё гладил её прекрасные волосы и размышлял над тем, что происходит.'
     th 'Лена – это подарок судьбы за мои страдания? Или же это чистая случайность? Во всяком случае случайность или подарок судьбы, те, кто могут читать мои мысли, спасибо, что дали возможность воссоединиться с ней.'
-    call imGAY('mods/four_horizons/cg/un_pio_dance.png', 'bg ext_boathouse_sunset', 'un smile3 dress', 'День четвертый.\n Мы снова танцуем.', 600, 0.99)
+    call imGAY('cg d3_un_dance', 'bg ext_boathouse_sunset', 'un smile3 dress', 'День четвертый.\n Мы снова танцуем.', 600, 0.95)
     $ new_chapter(4, u"День четвёртый.\n Мы снова танцуем.")
     $ day_time()
     $ persistent.sprite_time = 'day'
@@ -4482,7 +4482,7 @@ label four_horizons:
     'Я поцеловал её в щёчку и закрыл глаза.'
     'Наверно, около минуты я лежал с закрытыми глазами, пока я не возобновил прерванную встречу с Морфеем.'
     $ persistent.sprite_time = 'night'
-    call imGAY('mods/four_horizons/cg/un_under.png', 'bg int_house_of_un_night', 'un shocked pioneer', 'День пятый.\nТолько ты\nя и наши чувства.', 400, 0.97)
+    call imGAY('mods/four_horizons/cg/un_under.png', 'bg int_house_of_un_night', 'un shocked pioneer', 'День пятый.\nТолько ты\nя и наши чувства.', 400, 0.935)
     $ persistent.sprite_time = 'day'
     $ day_time()
     $ new_chapter(5, u"День пятый.\nТолько ты, я и наши чувства.")
@@ -5118,7 +5118,7 @@ label four_horizons:
     'Надеюсь, Лена это оценит и запомнит на всю жизнь, на какого человека она нарвалась. Я всё сделаю для того, чтобы она была счастлива.'
     $ persistent.sprite_time = 'day'
     'Под этими размышлениями и милым сопением своей соседки, девушки и будущей невесты Лены, я отправился смотреть очередной секретный сон.'
-    call imGAY('mods/four_horizons/cg/un_sqr.png', 'bg ext_square_day', 'un cry_smile pioneer', 'День шестой.\nСтранный день.', 400, 0.97)
+    call imGAY('mods/four_horizons/cg/un_sqr.png', 'bg ext_square_day', 'un cry_smile pioneer', 'День шестой.\nСтранный день.', 400, 0.915)
     $ new_chapter(6, u"День шестой.\nСтранный день.")
     $ day_time()
     scene bg park
@@ -5913,7 +5913,7 @@ label four_horizons:
     'Я открыл дверь и занёс Лену в клуб.'
     scene bg obs_int_musclub_mattresses_night with dissolve
     show un smile pioneer close at left
-    show se smile
+    show expression im.MatrixColor("mods/four_horizons/spr/sem/se_smile.png", im.matrix.tint(0.63, 0.78, 0.82)) as se
     with dspr
     'В клубе был только один Семён.'
     me 'О, привет, детективы. Нашли Славяну?'
@@ -6085,7 +6085,7 @@ label after_song1:
     show blink
     'И на этот раз я решил не забивать себе голову различными мыслями и размышлениями и просто провалился в сон.'
     $ persistent.sprite_time = 'night'
-    call imGAY('mods/four_horizons/cg/Lena_n.png', 'bg ext_stage_big_night', 'un grin pioneer', 'День пятый.\nТолько ты\nя и наши чувства.', 400, 0.97)
+    call imGAY('mods/four_horizons/cg/Lena_n.png', 'bg ext_stage_big_night', 'un grin dress', 'День седьмой.\nМы запомним это лето.', 400, 0.97)
     $ new_chapter(7, u"День седьмой.\nМы запомним это лето.")
     'Я слышал несколько незнакомых мне криков.'
     doc1 'Мы его теряем!'
@@ -6472,7 +6472,13 @@ label after_song1:
     vi 'Я звезда, а ты Луна, которая сегодня покажет свой истинный, потрясающий облик.'
     un 'Ладно, пошли, пока они сцену играют.'
     'Девушки играли свою сцену, лагерь уже начал смеяться.'
+    scene expression 'mods/four_horizons/bg/ext_stage_normal_night.jpg' as bgf with dissolve
     'Мы пришли к нашей команде.'
+    show un normal dress
+    show dv normal pioneer at left
+    show expression im.MatrixColor("mods/four_horizons/spr/sem/se_smile.png", im.matrix.tint(0.63, 0.78, 0.82)) at fright as se
+    show mi smile pioneer at right
+    with dspr
     vi 'Ну что все готовы?'
     mi 'Да, ты молодец что ещё им помог со сценарием.'
     vi 'Ой да пустяки.'
@@ -6489,6 +6495,7 @@ label after_song1:
     mt 'Ну, а теперь последнее выступление команды Лены и Виталия. Что за сцена – никому неизвестно, но они обещали, что мы эту сцену запомним на всю нашу жизнь, попрошу поддержать аплодисментами.'
     vi 'Ну что, Ленусик, пошли прятаться в середину сцены.'
     un 'Пойдём, Виталечка.'
+    scene black with dissolve
     'Мы с ней спрятались за ширмой, которая изображала из себя что-то похожее на замок, как только Семён произнесёт свою речь, ширма упадёт.'
     dv 'Я всех приветствую. Вас ждёт необычная сцена. Представьте Графа, который имеет богатство и могущество.'
     dv 'Он обречён быть один до старости, пока не придёт время задуматься о наследнике, и о простой девушке, которая не хотела слушать наставления своей семьи и считала, что её возлюбленный не такой плохой, как все графы.'
@@ -6822,7 +6829,7 @@ label after_song2:
     vito 'Всё хорошо. А теперь прощай. Удачи вам с Леной.'
     scene black with flash
     'Вито врезал мне в лицо, и я потерял сознание.'
-    call imGAY('mods/four_horizons/cg/un_ep.png', 'bg int_semen_room_clean', 'mods/four_horizons/spr/un/normal/un_2_sleep_4hor_cry_smile.png', 'Эпилог.\nЖизнь только\nради нас.', 500, 0.92)
+    call imGAY('mods/four_horizons/cg/un_ep.png', 'bg int_semen_room_clean', 'mods/four_horizons/spr/un/normal/un_2_sleep_4hor_cry_smile.png', 'Эпилог.\nЖизнь только\nради нас.', 500, 0.90)
     $ new_chapter(9, u'Эпилог.\nЖизнь только ради нас.')
     th 'Была адская боль, я не знаю, что больнее: восставать из мёртвых или жить с оторванными ногами?'
     th 'Это последние мгновения перед счастливой семейной жизнью, которую я не должен просрать ни в коем случае!'
@@ -6917,6 +6924,7 @@ label after_song2:
     'У него дочь истекала кровью, и он делал всё, чтобы спасти её. Даже в качестве доказательства предъявил выписку осмотра врача. Поэтому он и сбил меня.'
     'Я простил его. Хоть и в самом начале желал ему смерти. Ведь я думал – очередная шпана или лихач, который купил себе права. Он не хотел этого ни в коем случае.'
     $ set_mode_adv()
+    $ persistent.sprite_time = 'day'
     scene bg park with dissolve2
     'Настало время сделать повторное предложение руки и сердца моей любимой и дорогой Лене.'
     'Когда я смог уже выбраться на улицу, я попросил своего коллегу купить красивое обручальное кольцо. Деньги я ему уже перевёл на карту.'
