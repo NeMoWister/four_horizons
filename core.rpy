@@ -110,21 +110,3 @@ label imGAY(cgn, bgn, spn, dayn, cgpos, textpos):
     pause 3
     show black with moveinright
     return
-<<<<<<< HEAD
-
-
-init python early:
-
-    import pypresence import Presence
-
-    #from pypresence import Presence
-
-    RPC = Presence("1039050589784526978")
-    RPC.connect()
-
-    RPC.update(state="bruh")
-
-    while True:
-        time.sleep(15)
-=======
->>>>>>> db34486e311623421dc9a59c41dd8ba12ce77e46

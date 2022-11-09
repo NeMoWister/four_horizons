@@ -1,10 +1,8 @@
 init:
     $ mods["four_horizons"] = u"Четыре Горизонта. Лена."
     $ config.developer = True
-    $ config.gl2 = True
 
 label four_horizons:
-    '[ROOT_PATH]'
     scene black with dissolve
     $ prolog_time()
     $ new_chapter(-1, u"История Виталия.\nПролог.\nДень рождение.")
