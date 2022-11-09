@@ -110,6 +110,7 @@ label imGAY(cgn, bgn, spn, dayn, cgpos, textpos):
     pause 3
     show black with moveinright
     return
+<<<<<<< HEAD
 
 
 init python early:
@@ -125,3 +126,5 @@ init python early:
 
     while True:
         time.sleep(15)
+=======
+>>>>>>> db34486e311623421dc9a59c41dd8ba12ce77e46
