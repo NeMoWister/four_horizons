@@ -111,9 +111,12 @@ label imGAY(cgn, bgn, spn, dayn, cgpos, textpos):
     show black with moveinright
     return
 
-init python:
-    import time
-    from pypresence import Presence
+
+init python early:
+
+    import pypresence import Presence
+
+    #from pypresence import Presence
 
     RPC = Presence("1039050589784526978")
     RPC.connect()
@@ -122,6 +125,3 @@ init python:
 
     while True:
         time.sleep(15)
-
-def fds_status(arg):
-    RPC.update(state="bruh")

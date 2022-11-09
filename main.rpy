@@ -3,9 +3,9 @@ init:
     $ config.developer = True
     $ config.gl2 = True
 
-label four_horizons_un:
+label four_horizons:
+    '[ROOT_PATH]'
     scene black with dissolve
-    $ fds_status('Пролог.\nДень рождение.')
     $ prolog_time()
     $ new_chapter(-1, u"История Виталия.\nПролог.\nДень рождение.")
     'Всегда есть такие моменты, которые радикально меняют вашу жизнь. Даже если вы считаете, когда все надежды и мечты разрушены. Позвольте мне поделиться историей, которая раз и навсегда изменила мою жизнь.'
