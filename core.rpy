@@ -86,6 +86,13 @@ init python:
     heart = 'mods/four_horizons/Музыка/ambi/heart.mp3'
     mgs = 'mods/four_horizons/Музыка/ambi/mgs.mp3'
 
+style imgay_style:
+    outlines [(absolute(3),"#00ff00",absolute(2),absolute(2))]
+    font 'mods/four_horizons/VinSlabPro-LightItalic.ttf'
+    color '#FFFFFF'
+    size 90
+
+
 label imGAY(cgn, bgn, spn, dayn, cgpos, textpos):
     $ fix, fix2 = int(cgpos), float(textpos)
     scene black with dissolve
@@ -96,7 +103,7 @@ label imGAY(cgn, bgn, spn, dayn, cgpos, textpos):
         blur 10
     show expression spn:
         xpos 1070
-    show text '{font=mods/four_horizons/GothicRus2.ttf}{size=90}{color=#8B00FF}[dayn]{/size}{/font}{/color}':
+    show text '{=imgay_style}[dayn]{/imgay_style}':
         xalign fix2
         yalign 0.8
     with dissolve2
