@@ -32,44 +32,44 @@ init:
 
     #спрайты
     image se angry = ConditionSwitch(
-    "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/four_horizons/Дополнительные спрайты/sem/se_Angry.png", im.matrix.tint(0.94, 0.82, 1.0) ),
-    "persistent.sprite_time=='night'",im.MatrixColor( "mods/four_horizons/Дополнительные спрайты/sem/se_Angry.png", im.matrix.tint(0.63, 0.78, 0.82) ),
-    True, "mods/four_horizons/Дополнительные спрайты/sem/se_Angry.png" )
+    "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/four_horizons/spr/sem/se_Angry.png", im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'",im.MatrixColor( "mods/four_horizons/spr/sem/se_Angry.png", im.matrix.tint(0.63, 0.78, 0.82) ),
+    True, "mods/four_horizons/spr/sem/se_Angry.png" )
 
     image se grin = ConditionSwitch(
-    "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/four_horizons/Дополнительные спрайты/sem/se_Grin.png", im.matrix.tint(0.94, 0.82, 1.0) ),
-    "persistent.sprite_time=='night'",im.MatrixColor( "mods/four_horizons/Дополнительные спрайты/sem/se_Grin.png", im.matrix.tint(0.63, 0.78, 0.82) ),
-    True, "mods/four_horizons/Дополнительные спрайты/sem/se_Grin.png" )
+    "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/four_horizons/spr/sem/se_Grin.png", im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'",im.MatrixColor( "mods/four_horizons/spr/sem/se_Grin.png", im.matrix.tint(0.63, 0.78, 0.82) ),
+    True, "mods/four_horizons/spr/sem/se_Grin.png" )
 
     image se normal = ConditionSwitch(
-    "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/four_horizons/Дополнительные спрайты/sem/se_Normal.png", im.matrix.tint(0.94, 0.82, 1.0) ),
-    "persistent.sprite_time=='night'",im.MatrixColor( "mods/four_horizons/Дополнительные спрайты/sem/se_Normal.png", im.matrix.tint(0.63, 0.78, 0.82) ),
-    True, "mods/four_horizons/Дополнительные спрайты/sem/se_Normal.png" )
+    "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/four_horizons/spr/sem/se_Normal.png", im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'",im.MatrixColor( "mods/four_horizons/spr/sem/se_Normal.png", im.matrix.tint(0.63, 0.78, 0.82) ),
+    True, "mods/four_horizons/spr/sem/se_Normal.png" )
 
     image se shocked = ConditionSwitch(
-    "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/four_horizons/Дополнительные спрайты/sem/se_Shocked.png", im.matrix.tint(0.94, 0.82, 1.0) ),
-    "persistent.sprite_time=='night'",im.MatrixColor( "mods/four_horizons/Дополнительные спрайты/sem/se_Shocked.png", im.matrix.tint(0.63, 0.78, 0.82) ),
-    True, "mods/four_horizons/Дополнительные спрайты/sem/se_Shocked.png" )
+    "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/four_horizons/spr/sem/se_Shocked.png", im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'",im.MatrixColor( "mods/four_horizons/spr/sem/se_Shocked.png", im.matrix.tint(0.63, 0.78, 0.82) ),
+    True, "mods/four_horizons/spr/sem/se_Shocked.png" )
 
     image se smile = ConditionSwitch(
-    "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/four_horizons/Дополнительные спрайты/sem/se_smile.png", im.matrix.tint(0.94, 0.82, 1.0) ),
-    "persistent.sprite_time=='night'",im.MatrixColor( "mods/four_horizons/Дополнительные спрайты/sem/se_smile.png", im.matrix.tint(0.63, 0.78, 0.82) ),
-    True, "mods/four_horizons/Дополнительные спрайты/sem/se_smile.png" )
+    "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/four_horizons/spr/sem/se_smile.png", im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'",im.MatrixColor( "mods/four_horizons/spr/sem/se_smile.png", im.matrix.tint(0.63, 0.78, 0.82) ),
+    True, "mods/four_horizons/spr/sem/se_smile.png" )
 
     image se sure = ConditionSwitch(
-    "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/four_horizons/Дополнительные спрайты/sem/se_Sure.png", im.matrix.tint(0.94, 0.82, 1.0) ),
-    "persistent.sprite_time=='night'",im.MatrixColor( "mods/four_horizons/Дополнительные спрайты/sem/se_Sure.png", im.matrix.tint(0.63, 0.78, 0.82) ),
-    True, "mods/four_horizons/Дополнительные спрайты/sem/se_Sure.png" )
+    "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/four_horizons/spr/sem/se_Sure.png", im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'",im.MatrixColor( "mods/four_horizons/spr/sem/se_Sure.png", im.matrix.tint(0.63, 0.78, 0.82) ),
+    True, "mods/four_horizons/spr/sem/se_Sure.png" )
 
     image se surprise = ConditionSwitch(
-    "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/four_horizons/Дополнительные спрайты/sem/se_surprise.png", im.matrix.tint(0.94, 0.82, 1.0) ),
-    "persistent.sprite_time=='night'",im.MatrixColor( "mods/four_horizons/Дополнительные спрайты/sem/se_surprise.png", im.matrix.tint(0.63, 0.78, 0.82) ),
-    True, "mods/four_horizons/Дополнительные спрайты/sem/se_surprise.png" )
+    "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/four_horizons/spr/sem/se_surprise.png", im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'",im.MatrixColor( "mods/four_horizons/spr/sem/se_surprise.png", im.matrix.tint(0.63, 0.78, 0.82) ),
+    True, "mods/four_horizons/spr/sem/se_surprise.png" )
 
     image se upset = ConditionSwitch(
-    "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/four_horizons/Дополнительные спрайты/sem/se_Upset.png", im.matrix.tint(0.94, 0.82, 1.0) ),
-    "persistent.sprite_time=='night'",im.MatrixColor( "mods/four_horizons/Дополнительные спрайты/sem/se_Upset.png", im.matrix.tint(0.63, 0.78, 0.82) ),
-    True, "mods/four_horizons/Дополнительные спрайты/sem/se_Upset.png" )
+    "persistent.sprite_time=='sunset'",im.MatrixColor( "mods/four_horizons/spr/sem/se_Upset.png", im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'",im.MatrixColor( "mods/four_horizons/spr/sem/se_Upset.png", im.matrix.tint(0.63, 0.78, 0.82) ),
+    True, "mods/four_horizons/spr/sem/se_Upset.png" )
 
 
     image un1 cry_smile = im.MatrixColor('mods/four_horizons/spr/un/normal/un_2_sleep_4hor_cry_smile.png', im.matrix.tint(0.63, 0.78, 0.82))
@@ -82,12 +82,12 @@ init:
 
 
 
-    image ded smile daily = "mods/four_horizons/Дополнительные спрайты/ded/ded/ded_1.png"
-    image ded smile2 daily = "mods/four_horizons/Дополнительные спрайты/ded/ded/ded_2.png"
-    image ded smile3 daily = "mods/four_horizons/Дополнительные спрайты/ded/ded/grigory_idle_b.png"
-    image ded dissatisfied daily = "mods/four_horizons/Дополнительные спрайты/ded/ded/grigory_moody_b.png"
-    image ded normal daily = "mods/four_horizons/Дополнительные спрайты/ded/ded/grigory_sad_b.png"
-    image ded wink daily = "mods/four_horizons/Дополнительные спрайты/ded/ded/grigory_wink_b.png"
+    image ded smile daily = "mods/four_horizons/spr/ded/ded/ded_1.png"
+    image ded smile2 daily = "mods/four_horizons/spr/ded/ded/ded_2.png"
+    image ded smile3 daily = "mods/four_horizons/spr/ded/ded/grigory_idle_b.png"
+    image ded dissatisfied daily = "mods/four_horizons/spr/ded/ded/grigory_moody_b.png"
+    image ded normal daily = "mods/four_horizons/spr/ded/ded/grigory_sad_b.png"
+    image ded wink daily = "mods/four_horizons/spr/ded/ded/grigory_wink_b.png"
 
     #фоны
     image bg int_din_sunset = 'mods/four_horizons/bg/int_din_sunset.jpg'
