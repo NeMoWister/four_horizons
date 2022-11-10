@@ -1,21 +1,21 @@
 init:
     $ mods["Four_horizons_Kirril_story_prologue"]=u"Четыре горизонта (История Кирилла)"
     #персонажи
-    $ mom = Character(u'Мама', color="#e9ff57", what_color="E2C778")
-    $ doc = Character(u'Доктор', color="#454545", what_color="E2C778")
-    $ doc1 = Character(u'Медсестра', color="#247ba6", what_color="E2C778")
-    $ vi = Character(u'Виталий', color="#013d00", what_color="E2C778")
-    $ vito = Character(u'Вито', color="#042604", what_color="E2C778")#042604
-    $ va = Character(u'Вадим', color="#ffffff", what_color="E2C778")
-    $ v = Character(u'Голоса', color="#E6E6FA", what_color="E2C778", kind=nvl)
-    $ vi_n = Character(u'Виталий:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed")
-    $ ge = Character(u'Георгий:', color="#331d01", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed")
-    $ re = Character(u'Регистратор', color="#331d01", what_color="E2C778")
+    $ mom = Character(u'Мама', color="#e9ff57", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
+    $ doc = Character(u'Доктор', color="#454545", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
+    $ doc1 = Character(u'Медсестра', color="#247ba6", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
+    $ vi = Character(u'Виталий', color="#013d00", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
+    $ vito = Character(u'Вито', color="#042604", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
+    $ va = Character(u'Вадим', color="#ffffff", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
+    $ v = Character(u'Голоса', color="#E6E6FA", what_color="E2C778", kind=nvl, drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
+    $ vi_n = Character(u'Виталий:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
+    $ ge = Character(u'Георгий:', color="#331d01", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
+    $ re = Character(u'Регистратор', color="#331d01", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
 
-    $ al = Character(u'Алексей', color="#013d00", what_color="E2C778")
-    $ vas = Character(u'Василий', color="#013d00", what_color="E2C778")
-    $ al_n = Character(u'Алексей:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed")
-    $ vas_n = Character(u'Василий:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed")
+    $ al = Character(u'Алексей', color="#013d00", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
+    $ vas = Character(u'Василий', color="#013d00", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
+    $ al_n = Character(u'Алексей:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
+    $ vas_n = Character(u'Василий:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
 
 
 
