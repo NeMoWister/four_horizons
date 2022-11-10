@@ -10,7 +10,7 @@ label Four_horizons_Kirril_story_day4:
     window show
     play ambience ambience_int_cabin_day fadein 2
     "Я проснулся чуть раньше будильника. Судя по заправленной кровати напротив, было ясно, что Славя ушла на пробежку. На стульчике весела её форма."
-    play sound sfx_blanket_off
+    play sound sfx_blanket_off_stand
     "Я встал с постели и сразу же принялся одеваться, пока моей соседки не было дома."
     "Хотел уже пойти умываться и чистить зубы, но вспомнил вчерашние слова Шурика."
     stop ambience fadeout 2
@@ -74,7 +74,7 @@ label Four_horizons_Kirril_story_day4:
     "Девочка не ждала, что я отреагирую именно так, как отреагировал."
     us "Ты думаешь, это она меня послала сюда?"
     ki "Я ничего не думаю. Ты могла и по своей инициативе, ничего не сказав Алисе, сюда прийти. Я ни с кем не желаю портить отношения, поэтому лучше просто оставьте меня и тех, с кем я общаюсь, в покое. В лагере и без меня полно народу."
-    show us smile pioneer with dspr 
+    show us smile pioneer with dspr
     us "Ладно, лично я к тебе не буду приставать. Пока!"
     hide us with dissolve
     play sound sfx_run_forest
@@ -152,7 +152,7 @@ label Four_horizons_Kirril_story_day4:
     play music music_list["get_to_know_me_better"] fadein 2
     scene ext_square_day with dissolve
     "Мы, придя на площадь, тут же встали в строй."
-    scene cg_line with dissolve
+    scene expression 'mods/four_horizons/cg/lineup_mi.png' with dissolve
     "Через пару минут пришла Ольга Дмитриевна."
     mt "Доброе утро, отряд, сегодня у нас по плану назначен поход. Сразу после обеда, чтобы к отбою успеть вернуться."
     mt "Но перед этим, лагерь нуждается в вашей помощи, и сейчас я разобью вас по парам, кто чем заниматься будет."
@@ -351,7 +351,7 @@ label Four_horizons_Kirril_story_day4:
     "Мы приступили мыть памятник Генде."
     show sl happy pioneer with dspr
     sl "Ой, кто бы говорил! А сам-то на субботниках больше всех работал, меньше всех отдыхал."
-    ki "А ты откуда знаешь?" 
+    ki "А ты откуда знаешь?"
     sl "Я не дура, с вами же тогда выходили, просто на другие участки, и я часто замечала, как многие баловались и отдыхали, а ты один берёшь и честно подметаешь."
     ki "Славя, нас будет сегодня ждать ещё один разговор."
     show sl smile pioneer with dspr
@@ -634,7 +634,7 @@ label Four_horizons_Kirril_story_day4:
     hide sh
     hide un
     show mz laugh glasses pioneer at left
-    show se smile pioneer at right
+    show se smile at right
     with dissolve
     "Женя с Семёном."
     hide mz

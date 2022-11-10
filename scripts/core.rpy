@@ -82,12 +82,12 @@ init:
 
 
 
-    image ded smile daily = "mods/four_horizons/spr/ded/ded/ded_1.png"
-    image ded smile2 daily = "mods/four_horizons/spr/ded/ded/ded_2.png"
-    image ded smile3 daily = "mods/four_horizons/spr/ded/ded/grigory_idle_b.png"
-    image ded dissatisfied daily = "mods/four_horizons/spr/ded/ded/grigory_moody_b.png"
-    image ded normal daily = "mods/four_horizons/spr/ded/ded/grigory_sad_b.png"
-    image ded wink daily = "mods/four_horizons/spr/ded/ded/grigory_wink_b.png"
+    image ded smile daily = "mods/four_horizons/spr/ded/ded_1.png"
+    image ded smile2 daily = "mods/four_horizons/spr/ded/ded_2.png"
+    image ded smile3 daily = "mods/four_horizons/spr/ded/grigory_idle_b.png"
+    image ded dissatisfied daily = "mods/four_horizons/spr/ded/grigory_moody_b.png"
+    image ded normal daily = "mods/four_horizons/spr/ded/grigory_sad_b.png"
+    image ded wink daily = "mods/four_horizons/spr/ded/grigory_wink_b.png"
 
     #фоны
     image bg int_din_sunset = 'mods/four_horizons/bg/int_din_sunset.jpg'
@@ -170,11 +170,11 @@ init:
     image door_in_old_camp_open = "mods/four_horizons/bg/door_in_old_camp_open.jpg"
     image Slavya_and_Kirill_on_the_bench = "mods/four_horizons/cg/Slavya and Kirill on the bench.jpg"
     image Kirill_reflection = "mods/four_horizons/cg/Kirill_reflection.jpg"
-    image Slavya_and_Kirill_at_the_table = "mods/four_horizons/Наше/Slavya_and_Kirill_at_the_table.jpg"
+    image Slavya_and_Kirill_at_the_table = "mods/four_horizons/cg/Slavya_and_Kirill_at_the_table.jpg"
     image evil_Kirill_and_Slavya = "mods/four_horizons/cg/evil_Kirill_and_Slavya.jpg"
     image Kirill_and_Slavya_dance = "mods/four_horizons/cg/EverlastingSummer-Scene-74.jpg"
     image Kirill_and_Slavya_kiss = "mods/four_horizons/cg/1454001594158369927.png"
-    image Kirill_and_Slavya_outside_camp = "mods/four_horizons/Наше/Kirill_and_Slavya_outside_camp.png"
+    image Kirill_and_Slavya_outside_camp = "mods/four_horizons/cg/Kirill_and_Slavya_outside_camp.png"
     image Slavya_and_Kirill_hug_open_eyes = "mods/four_horizons/cg/Slavya_and_Kirill_hug_open_eyes.jpg"
     image Slavya_and_Kirill_hug_close_eyes = "mods/four_horizons/cg/Slavya_and_Kirill_hug_close_eyes.jpg"
 

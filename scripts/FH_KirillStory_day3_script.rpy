@@ -23,7 +23,7 @@ label Four_horizons_Kirril_story_day3:
     hide se with dissolve
     play sound sfx_close_door_1
     "Семён вышел из домика."
-    play sound sfx_blanket_off
+    play sound sfx_blanket_off_stand_stand
     "Я встал с постели и заправил её."
     stop ambience fadeout 2
     play music music_list["everyday_theme"] fadein 2
@@ -165,7 +165,7 @@ label Four_horizons_Kirril_story_day3:
     mt "Хорошо, быстро в строй!"
     stop ambience fadeout 2
     play music music_list["get_to_know_me_better"] fadein 2
-    scene cg_line with dissolve
+    scene expression 'mods/four_horizons/cg/lineup_mi.png' with dissolve
     "Мы встали в строй, линейка продолжилась."
     "Вожатая рассказывала о будущих планах жизни лагеря. На завтра она запланировала поход после обеда. А через два дня она решила устроить танцы."
     "Также она отметила наш вчерашний поступок."
@@ -329,7 +329,7 @@ label Four_horizons_Kirril_story_day3:
     me "Я только за."
     show sl normal pioneer at right with dspr
     sl "А вожатая отпустит?"
-    show se normal pioneer at left with dspr
+    show se normal at left with dspr
     me "Каждый может что-то попросить у вожатой, учитывая то, что мы спасли её шкуру в поисках с Шуриком."
     show sl smile2 pioneer at right with dspr
     sl "Ладно, раз вы собрались, то я составлю вам компанию."
@@ -711,7 +711,7 @@ label Four_horizons_Kirril_story_day3:
     sl "Ты, кажется, хотел ещё какой-то вопрос со мной обсудить?"
     ki "Да. Сейчас…"
     "Я сделал глубокий вдох."
-    ki "Славя, как ты смотришь на то, чтобы я стал твоим соседом, вместо Жени?" 
+    ki "Славя, как ты смотришь на то, чтобы я стал твоим соседом, вместо Жени?"
     show sl surprise pioneer with dspr
     "Славя была не то, чтобы удивлена, она была в шоке."
     sl "Т{w}-ты?"
@@ -958,7 +958,7 @@ label Four_horizons_Kirril_story_day3:
     sl "Хорошо, ложись спать."
     scene int_house_of_sl_night with dissolve
     $ persistent.sprite_time = "night"
-    play sound sfx_blanket_off
+    play sound sfx_blanket_off_stand
     "Славя спала на левой кровати, я положил свои вещи у правой. Я быстренько разделся и лёг спать."
     ki "Спокойной ночи!"
     sl "Сладких снов!"
