@@ -169,7 +169,7 @@ label Four_horizons_Kirril_story_day7:
     show un shy pioneer:
         xcenter 0.55 ycenter 0.50
     with dspr
-    "Лена сильно покраснела"
+    "Лена сильно покраснела."
     ki "Семён – классный сосед, который всегда мог выслушать, и если я его о чём-то попрошу, поможет всегда."
     show se grin:
         xcenter 0.88 ycenter 0.50
@@ -346,7 +346,8 @@ label Four_horizons_Kirril_story_day7:
     show sl smile2 pioneer at right with dspr
     sl "Хитрый!"
     show mt grin panama pioneer at left with dspr
-    mt "Вы бы хоть уехали для начала, а потом сценки бы устраивали. – засмеялась Ольга Дмитриевна."
+    mt "Вы бы хоть уехали для начала, а потом сценки бы устраивали."
+    "Тихонько засмеялась она."
     ki "Да мы, это…"
     show mt laugh panama pioneer at left with dspr
     mt "Влюблённость – она такая."
@@ -377,7 +378,7 @@ label Four_horizons_Kirril_story_day7:
     sl "Здравствуйте, Анатолий Георгиевич, меня зовут Славяна, но для всех я просто Славя. Можете и вы меня так звать."
     show ded smile2 daily at right with dspr
     ded "Очень приятно, девушка. Можешь меня звать просто Анатолий. Я очень рад, что мой внук добился, чего хотел."
-    ki "Да. Добился. Спасибо тебе, дедуля! Если бы не ты, то я бы, наверно, никогда бы ей не признался!"
+    ki "Да. Добился. Спасибо тебе, дедуля! Если не ты, то я наверное никогда бы ей не признался!"
     show sl smile2 pioneer at left with dspr
     sl "И никогда бы не услышал, что это взаимно!"
     show ded smile daily at right with dspr

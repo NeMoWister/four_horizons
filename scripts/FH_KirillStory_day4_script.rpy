@@ -21,13 +21,15 @@ label Four_horizons_Kirril_story_day4:
     $ persistent.sprite_time = "sunset"
     scene int_dining_hall_sunset
     show sh serious pioneer
+    show prologue_dream
     with dissolve
+    window show
     sh "Алиса и Электроник сговорились, чтобы подставить тебя и Женю перед вожатой. Только, в какой день они это сделают, неизвестно."
-    show prologue_dream with dissolve
+    window hide
     $ renpy.pause(1)
     $ day_time()
-    $ persistent.sprite_time = "day"
     scene int_house_of_sl_day with dissolve
+    $ persistent.sprite_time = "day"
     window show
     play ambience ambience_int_cabin_day fadein 2
     th "Теперь одному идти опасно, будут провокации."
@@ -44,7 +46,7 @@ label Four_horizons_Kirril_story_day4:
     ki "Привет! Тебя ждал, без тебя не хочу идти умываться."
     show sl surprise sport with dspr
     sl "Почему?"
-    ki "На то есть свои причины, на завтраке расскажу. Надо только места на 6 человек занять."
+    ki "На то есть свои причины, на завтраке расскажу. Надо только места на шесть человек занять."
     sl "Мы же впятером договорились собраться."
     ki "Возможно, и вшестером, если вы все проголосуете за."
     show sl tender sport with dspr
@@ -93,7 +95,7 @@ label Four_horizons_Kirril_story_day4:
     th "Или опять рыжая сказки сочиняет?"
     th "Плевать, пускай завидуют."
     show sl smile pioneer with dspr
-    sl "Кажется, по поводу нас уже слухи или сплетни идут"
+    sl "Кажется, по поводу нас уже слухи или сплетни идут."
     scene ext_washstand_day
     show sl normal pioneer
     with dissolve
@@ -231,7 +233,7 @@ label Four_horizons_Kirril_story_day4:
     mz "А вот и мы! Привет, друзья! Как спалось, Кирилл, на моём месте?"
     ki "Привет, Женя! Здорово, Семён!"
     "Мы поприветствовали друг друга рукопожатием."
-    ki "Спалось замечательно, а тебе как спалось на моем месте?"
+    ki "Спалось замечательно, а тебе как спалось на моём месте?"
     mz "Восхитительно!"
     me "Мы аж чуть не проспали линейку."
     sl "Долго обнимались?"
@@ -315,7 +317,7 @@ label Four_horizons_Kirril_story_day4:
     play ambience ambience_camp_center_day fadein 2
     "Выйдя из столовой, Славя взяла меня за руку и повела в сторону складов."
     ki "А нам там много надо будет убирать?"
-    sl "Нет. Мы собираем кучку листвы и всякого мусора, протрём памятник со скамейками и все."
+    sl "Нет. Мы собираем кучку листвы и всякого мусора, протрём памятник со скамейками и всё."
     ki "Вчера же Алиса тут должна была убираться."
     sl "Так она весь мусор из-под скамеек собирала."
     ki "Ясненько. Тогда давай мне веник, я сразу пойду подметать, пока ты ходишь за водой, а там вместе всё быстро сделаем."
@@ -414,7 +416,7 @@ label Four_horizons_Kirril_story_day4:
     me "Есть такое."
     ki "Ладно, спасибо."
     "Перед тем, как зайти в библиотеку я пожал руку Семёну."
-    th "Хороший парень, добрый и выручает чем можешь."
+    th "Хороший парень, добрый и выручаешь чем можешь."
     scene int_library_day with dissolve
     "Я зашёл в библиотеку."
     "Женя тут же обратила на меня внимание."

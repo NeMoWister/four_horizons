@@ -1,34 +1,34 @@
 init:
     $ mods["Four_horizons_Kirril_story_prologue"]=u"Четыре горизонта (История Кирилла)"
     #персонажи
-    $ mom = Character(u'Мама', color="#e9ff57", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ doc = Character(u'Доктор', color="#454545", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ doc1 = Character(u'Медсестра', color="#247ba6", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ vi = Character(u'Виталий', color="#013d00", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ vito = Character(u'Вито', color="#042604", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ va = Character(u'Вадим', color="#ffffff", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ v = Character(u'Голоса', color="#E6E6FA", what_color="E2C778", kind=nvl, drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ vi_n = Character(u'Виталий:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ ge = Character(u'Георгий:', color="#331d01", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ re = Character(u'Регистратор', color="#331d01", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
+    $ mom = Character(u'Мама', color="#e9ff57", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ doc = Character(u'Доктор', color="#454545", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ doc1 = Character(u'Медсестра', color="#247ba6", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ vi = Character(u'Виталий', color="#013d00", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ vito = Character(u'Вито', color="#042604", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ va = Character(u'Вадим', color="#ffffff", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ v = Character(u'Голоса', color="#E6E6FA", what_color="E2C778", kind=nvl, drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ vi_n = Character(u'Виталий:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ ge = Character(u'Георгий:', color="#331d01", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ re = Character(u'Регистратор', color="#331d01", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
 
-    $ al = Character(u'Алексей', color="#013d00", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ vas = Character(u'Василий', color="#013d00", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ al_n = Character(u'Алексей:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ vas_n = Character(u'Василий:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
+    $ al = Character(u'Алексей', color="#013d00", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ vas = Character(u'Василий', color="#013d00", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ al_n = Character(u'Алексей:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ vas_n = Character(u'Василий:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
 
 
 
-    $ ded = Character(u'Дед', color="#E6E6FA", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ ki = Character(u'Кирилл', color="#E6E6FA", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ ki_nvl = Character('Кирилл: ', kind=nvl, color="#E6E6FA", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ shb = Character(u'Парень', color="#E6E600", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ meb = Character(u'Парень', color="#E6E6FA", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ pap_ki = Character(u'Папа: ', kind=nvl, color="#E6E6FA", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ mam_ki = Character(u'Мама: ', kind=nvl, color="#E6E6FA", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ pap_sl = Character(u'Папа Слави: ', kind=nvl, color="#FFD200", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ mam_sl_nvl = Character(u'Мама Слави: ', kind=nvl, color="#FFD200", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
-    $ mam_sl = Character(u'Мама Слави', color="#FFD200", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
+    $ ded = Character(u'Дед', color="#E6E6FA", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ ki = Character(u'Кирилл', color="#E6E6FA", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ ki_nvl = Character('Кирилл: ', kind=nvl, color="#E6E6FA", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ shb = Character(u'Парень', color="#E6E600", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ meb = Character(u'Парень', color="#E6E6FA", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ pap_ki = Character(u'Папа: ', kind=nvl, color="#E6E6FA", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ mam_ki = Character(u'Мама: ', kind=nvl, color="#E6E6FA", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ pap_sl = Character(u'Папа Слави: ', kind=nvl, color="#FFD200", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ mam_sl_nvl = Character(u'Мама Слави: ', kind=nvl, color="#FFD200", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ mam_sl = Character(u'Мама Слави', color="#FFD200", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
 
     #спрайты
     image se angry = ConditionSwitch(
@@ -82,8 +82,8 @@ init:
 
 
 
-    image ded smile daily = "mods/four_horizons/spr/ded/ded_1.png"
-    image ded smile2 daily = "mods/four_horizons/spr/ded/ded_2.png"
+    image ded smile daily = "mods/four_horizons/spr/ded_1.png"
+    image ded smile2 daily = "mods/four_horizons/spr/ded_2.png"
     image ded smile3 daily = "mods/four_horizons/spr/ded/grigory_idle_b.png"
     image ded dissatisfied daily = "mods/four_horizons/spr/ded/grigory_moody_b.png"
     image ded normal daily = "mods/four_horizons/spr/ded/grigory_sad_b.png"
@@ -137,65 +137,13 @@ init:
     image bg stadion2 = "mods/four_horizons/bg/stadion2.jpg"
 
 
-
-    image ext_depot = "mods/four_horizons/bg/ext_depot.jpg"
-    image int_depot = "mods/four_horizons/bg/int_depot.png"
-    image countryhouse = "mods/four_horizons/bg/countryhouse.jpg"
-    image int_countryhouse_day = "mods/four_horizons/bg/int_countryhouse1.jpg"
-    image int_kirill_house_day = "mods/four_horizons/bg/int_kirill_house_day.jpg"
-    image int_kirill_house_sunset = "mods/four_horizons/bg/int_kirill_house_sunset.jpg"
-    image int_kirill_house_night = "mods/four_horizons/bg/int_kirill_house_night.jpg"
-    image ext_kirill_house_day = "mods/four_horizons/bg/ext_kirill_house_day.jpg"
-    image ext_kirill_house_sunset = "mods/four_horizons/bg/ext_kirill_house_sunset.jpg"
-    image ext_kirill_house_night = "mods/four_horizons/bg/ext_kirill_house_night.jpg"
-    image ext_clubs_sunset = "mods/four_horizons/bg/ext_clubs_sunset.jpg"
-    image ext_houses_night = "mods/four_horizons/bg/ext_houses_night.png"
-    image ext_island_reverse_day = "mods/four_horizons/bg/ext_island_reverse_day.jpg"
-    image ext_boathouse_sunset = "mods/four_horizons/bg/ext_boathouse_sunset.jpg"
-    image ext_island_sunset = "mods/four_horizons/bg/ext_island_sunset.jpg"
-    image int_dining_hall_people_sunset = "mods/four_horizons/bg/int_dining_hall_people_sunset.jpg"
-    image ext_house_of_sl_sunset = "mods/four_horizons/bg/ext_house_of_sl_sunset.png"
-    image ext_house_of_sl_night = "mods/four_horizons/bg/ext_house_of_sl_night.png"
-    image int_house_of_sl_light_night = "mods/four_horizons/bg/int_house_of_sl_light_night.jpg"
-    image int_house_of_sl_night = "mods/four_horizons/bg/int_house_of_sl_night.png"
-    image ext_forest_sunset = "mods/four_horizons/bg/ext_forest10_sunset.jpg"
-    image ext_library_sunset = "mods/four_horizons/bg/ext_library_sunset.png"
-    image ext_depot_sunset = "mods/four_horizons/bg/ext_depot_sunset.jpg"
-
-    #ЦГ
-    image int_old_camp_car = "mods/four_horizons/bg/int_old_camp_car.jpg"
-    image int_old_car_forest = "mods/four_horizons/bg/int_old_car_forest.png"
-    image cg_line = "mods/four_horizons/cg/cg_line.jpg"
-    image door_in_old_camp = "mods/four_horizons/bg/door_in_old_camp.jpg"
-    image door_in_old_camp_open = "mods/four_horizons/bg/door_in_old_camp_open.jpg"
-    image Slavya_and_Kirill_on_the_bench = "mods/four_horizons/cg/Slavya and Kirill on the bench.jpg"
-    image Kirill_reflection = "mods/four_horizons/cg/Kirill_reflection.jpg"
-    image Slavya_and_Kirill_at_the_table = "mods/four_horizons/cg/Slavya_and_Kirill_at_the_table.jpg"
-    image evil_Kirill_and_Slavya = "mods/four_horizons/cg/evil_Kirill_and_Slavya.jpg"
-    image Kirill_and_Slavya_dance = "mods/four_horizons/cg/EverlastingSummer-Scene-74.jpg"
-    image Kirill_and_Slavya_kiss = "mods/four_horizons/cg/1454001594158369927.png"
-    image Kirill_and_Slavya_outside_camp = "mods/four_horizons/cg/Kirill_and_Slavya_outside_camp.png"
-    image Slavya_and_Kirill_hug_open_eyes = "mods/four_horizons/cg/Slavya_and_Kirill_hug_open_eyes.jpg"
-    image Slavya_and_Kirill_hug_close_eyes = "mods/four_horizons/cg/Slavya_and_Kirill_hug_close_eyes.jpg"
-
 init python:
     heart = 'mods/four_horizons/Музыка/ambi/heart.mp3'
     mgs = 'mods/four_horizons/Музыка/ambi/mgs.mp3'
-    #Звуки
-    sound_of_zhiguli_leaving = "mods/four_horizons/Музыка/ambi/sound_of_zhiguli_leaving.mp3"
-    pull_handle_of_door = "mods/four_horizons/Музыка/ambi/pull_handle_of_door.mp3"
-    doused_with_water = "mods/four_horizons/Музыка/ambi/doused_with_water.mp3"
-    turning_on_light = "mods/four_horizons/Музыка/ambi/turning_on_light.mp3"
-    sfx_unlock_door = "mods/four_horizons/Музыка/ambi/sfx_unlock_door.mp3"
-    sound_of_running = "mods/four_horizons/Музыка/ambi/sound_of_running.mp3"
+    prolog = 'mods/four_horizons/music/prolog.mp3'
+    PW3Godot = 'mods/four_horizons/music/PW3-Godot.mp3'
+    lifendeath = 'mods/four_horizons/music/lifendeath.mp3'
 
-    #Музыка
-    Stigmata_September = "mods/four_horizons/Музыка/Stigmata -Сентябрь.mp3"
-    Yan_Shpitalnik_Two = "mods/four_horizons/Музыка/Yan Shpitalnik - Two.mp3"
-    Cross_Examination_Allegro = "mods/four_horizons/Музыка/OST Ace Attorney - Cross Examination Allegro.mp3"
-    Pursuit_Cornered = "mods/four_horizons/Музыка/OST Ace_Attorney - Pursuit_Cornered.mp3"
-    Klavier_Gavin_Guilty_Love = "mods/four_horizons/Музыка/Toshihiko_Horiyama_-_Klavier_Gavin_Guilty_Love.mp3"
-    quiet_night = "mods/four_horizons/Музыка/Кино - Спокойная ночь.mp3"
 
 style imgay_style:
     outlines [(absolute(3),"#00ff00",absolute(2),absolute(2))]
@@ -221,3 +169,94 @@ label imGAY(cgn, bgn, spn, dayn, cgpos, textpos):
     pause 3
     show black with moveinright
     return
+
+
+
+
+
+
+
+
+
+init:
+    image ded smile daily = "mods/four_horizons/spr/ded/ded_1.png"
+    image ded smile2 daily = "mods/four_horizons/spr/ded/ded_2.png"
+    image ded smile3 daily = "mods/four_horizons/spr/ded/grigory_idle_b.png"
+    image ded dissatisfied daily = "mods/four_horizons/spr/ded/grigory_moody_b.png"
+    image ded normal daily = "mods/four_horizons/spr/ded/grigory_sad_b.png"
+    image ded wink daily = "mods/four_horizons/spr/ded/grigory_wink_b.png"
+
+
+
+
+
+    #БГ
+    image ext_depot = "mods/four_horizons/bg/ext_depot.jpg"
+    image int_depot = "mods/four_horizons/bg/int_depot.png"
+    image countryhouse = "mods/four_horizons/bg/countryhouse.jpg"
+    image int_countryhouse_day = "mods/four_horizons/bg/int_countryhouse1.jpg"
+    image int_kirill_house_day = "mods/four_horizons/bg/int_kirill_house_day.jpg"
+    image int_kirill_house_sunset = "mods/four_horizons/bg/int_kirill_house_sunset.jpg"
+    image int_kirill_house_night = "mods/four_horizons/bg/int_kirill_house_night.jpg"
+    image ext_kirill_house_day = "mods/four_horizons/bg/ext_kirill_house_day.jpg"
+    image ext_kirill_house_sunset = "mods/four_horizons/bg/ext_kirill_house_sunset.jpg"
+    image ext_kirill_house_night = "mods/four_horizons/bg/ext_kirill_house_night.jpg"
+    image int_kirill_house_night_light = "mods/four_horizons/bg/int_kirill_house_night_light.jpg"
+    image ext_clubs_sunset = "mods/four_horizons/bg/ext_clubs_sunset.jpg"
+    image ext_houses_night = "mods/four_horizons/bg/ext_houses_night.png"
+    image ext_island_reverse_day = "mods/four_horizons/bg/ext_island_reverse_day.jpg"
+    image ext_boathouse_sunset = "mods/four_horizons/bg/ext_boathouse_sunset.jpg"
+    image ext_island_sunset = "mods/four_horizons/bg/ext_island_sunset.jpg"
+    image int_dining_hall_people_sunset = "mods/four_horizons/bg/int_dining_hall_people_sunset.jpg"
+    image ext_house_of_sl_sunset = "mods/four_horizons/bg/ext_house_of_sl_sunset.png"
+    image ext_house_of_sl_night = "mods/four_horizons/bg/ext_house_of_sl_night.png"
+    image int_house_of_sl_light_night = "mods/four_horizons/bg/int_house_of_sl_light_night.jpg"
+    image int_house_of_sl_night = "mods/four_horizons/bg/int_house_of_sl_night.png"
+    image ext_forest_sunset = "mods/four_horizons/bg/ext_forest10_sunset.jpg"
+    image ext_library_sunset = "mods/four_horizons/bg/ext_library_sunset.png"
+    image ext_depot_sunset = "mods/four_horizons/bg/ext_depot_sunset.jpg"
+
+
+
+
+
+    #ЦГ
+    image int_old_camp_car = "mods/four_horizons/bg/int_old_camp_car.jpg"
+    image int_old_car_forest = "mods/four_horizons/bg/int_old_car_forest.png"
+    image cg_line = "mods/four_horizons/cg/cg_line.jpg"
+    image Slavya_and_Kirill_on_the_bench = "mods/four_horizons/cg/Slavya and Kirill on the bench.jpg"
+    image Kirill_reflection = "mods/four_horizons/cg/Kirill_reflection.jpg"
+    image Slavya_and_Kirill_at_the_table = "mods/four_horizons/cg/Slavya_and_Kirill_at_the_table.jpg"
+    image evil_Kirill_and_Slavya = "mods/four_horizons/cg/evil_Kirill_and_Slavya.jpg"
+    image Kirill_and_Slavya_dance = "mods/four_horizons/cg/Kirill_and_Slavya_dance99.jpg"
+    image Kirill_and_Slavya_kiss = "mods/four_horizons/cg/Kirill_and_Slavya_kiss99.png"
+    image Kirill_and_Slavya_outside_camp = "mods/four_horizons/cg/Kirill_and_Slavya_outside_camp99.png"
+    image Slavya_and_Kirill_hug_open_eyes = "mods/four_horizons/cg/Slavya_and_Kirill_hug_open_eyes.jpg"
+    image Slavya_and_Kirill_hug_close_eyes = "mods/four_horizons/cg/Slavya_and_Kirill_hug_close_eyes99.jpg"
+    image map = "mods/four_horizons/bg/map.jpg"
+
+
+
+
+
+    #Музыка
+    $ Stigmata_September = "mods/four_horizons/Музыка/Stigmata -Сентябрь.mp3"
+    $ Yan_Shpitalnik_Two = "mods/four_horizons/Музыка/Yan Shpitalnik - Two.mp3"
+    $ Cross_Examination_Allegro = "mods/four_horizons/Музыка/OST Ace Attorney - Cross Examination Allegro.mp3"
+    $ Pursuit_Cornered = "mods/four_horizons/Музыка/OST Ace_Attorney - Pursuit_Cornered.mp3"
+    $ Klavier_Gavin_Guilty_Love = "mods/four_horizons/Музыка/Toshihiko_Horiyama_-_Klavier_Gavin_Guilty_Love.mp3"
+    $ quiet_night = "mods/four_horizons/Музыка/Кино - Спокойная ночь.mp3"
+    $ Gruppa_krovi = "mods/four_horizons/Музыка/Viktor_Cojj_-_Gruppa_krovi.mp3"
+
+
+
+
+
+    #Звуки
+    $ sound_of_zhiguli_leaving = "mods/four_horizons/Звуки/sound_of_zhiguli_leaving.mp3"
+    $ pull_handle_of_door = "mods/four_horizons/Звуки/pull_handle_of_door.mp3"
+    $ doused_with_water = "mods/four_horizons/Звуки/doused_with_water.mp3"
+    $ turning_on_light = "mods/four_horizons/Звуки/turning_on_light.mp3"
+    $ sfx_unlock_door = "mods/four_horizons/Звуки/sfx_unlock_door.mp3"
+    $ sound_of_running = "mods/four_horizons/Звуки/sound_of_running.mp3"
+    $ sound_of_pen_painting = "mods/four_horizons/Звуки/sound_of_pen_painting.mp3"
