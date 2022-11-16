@@ -177,7 +177,7 @@ init:
     image Kirill_and_Slavya_outside_camp = "mods/four_horizons/Наше/Kirill_and_Slavya_outside_camp.png"
     image Slavya_and_Kirill_hug_open_eyes = "mods/four_horizons/cg/Slavya_and_Kirill_hug_open_eyes.jpg"
     image Slavya_and_Kirill_hug_close_eyes = "mods/four_horizons/cg/Slavya_and_Kirill_hug_close_eyes.jpg"
-
+ 
 init python:
     heart = 'mods/four_horizons/Музыка/ambi/heart.mp3'
     mgs = 'mods/four_horizons/Музыка/ambi/mgs.mp3'
