@@ -232,12 +232,18 @@ init:
     image Kirill_and_Slavya_kiss = "mods/four_horizons/cg/Kirill_and_Slavya_kiss99.png"
     image Kirill_and_Slavya_outside_camp = "mods/four_horizons/cg/Kirill_and_Slavya_outside_camp99.png"
     image Slavya_and_Kirill_hug_open_eyes = "mods/four_horizons/cg/Slavya_and_Kirill_hug_open_eyes.jpg"
-    image Slavya_and_Kirill_hug_close_eyes = "mods/four_horizons/cg/Slavya_and_Kirill_hug_close_eyes99.jpg"
-    image map = "mods/four_horizons/bg/map.jpg"
+    image Slavya_and_Kirill_hug_close_eyes = "mods/four_horizons/cg/Slavya_and_Kirill_hug_close_eyes.jpg"
 
-
-
-
+init python:
+    heart = 'mods/four_horizons/Музыка/ambi/heart.mp3'
+    mgs = 'mods/four_horizons/Музыка/ambi/mgs.mp3'
+    #Звуки
+    sound_of_zhiguli_leaving = "mods/four_horizons/Музыка/ambi/sound_of_zhiguli_leaving.mp3"
+    pull_handle_of_door = "mods/four_horizons/Музыка/ambi/pull_handle_of_door.mp3"
+    doused_with_water = "mods/four_horizons/Музыка/ambi/doused_with_water.mp3"
+    turning_on_light = "mods/four_horizons/Музыка/ambi/turning_on_light.mp3"
+    sfx_unlock_door = "mods/four_horizons/Музыка/ambi/sfx_unlock_door.mp3"
+    sound_of_running = "mods/four_horizons/Музыка/ambi/sound_of_running.mp3"
 
     #Музыка
     $ Stigmata_September = "mods/four_horizons/Музыка/Stigmata -Сентябрь.mp3"
