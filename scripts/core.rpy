@@ -4,18 +4,18 @@ init:
     $ mom = Character(u'Мама', color="#e9ff57", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     $ doc = Character(u'Доктор', color="#454545", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     $ doc1 = Character(u'Медсестра', color="#247ba6", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
-    $ vi = Character(u'Виталий', color="#013d00", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
-    $ vito = Character(u'Вито', color="#042604", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ vi = Character(u'Виталий', color="#1E7628", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ vito = Character(u'Вито', color="#049515", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     $ va = Character(u'Вадим', color="#ffffff", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     $ v = Character(u'Голоса', color="#E6E6FA", what_color="E2C778", kind=nvl, drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
-    $ vi_n = Character(u'Виталий:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
-    $ ge = Character(u'Георгий:', color="#331d01", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ vi_n = Character(u'Виталий:', color="#30B53F", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ ge = Character(u'Георгий:', color="#9B501C", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
     $ re = Character(u'Регистратор', color="#331d01", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
 
-    $ al = Character(u'Алексей', color="#013d00", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
-    $ vas = Character(u'Василий', color="#013d00", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
-    $ al_n = Character(u'Алексей:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
-    $ vas_n = Character(u'Василий:', color="#013d00", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ al = Character(u'Алексей', color="#30B53F", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ vas = Character(u'Василий', color="#30B53F", what_color="E2C778", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ al_n = Character(u'Алексей:', color="#30B53F", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
+    $ vas_n = Character(u'Василий:', color="#30B53F", what_color="E2C778", kind=nvl, ctc="ctc_animation_nvl", ctc_position="fixed", drop_shadow = [ (2, 2) ], drop_shadow_color = "#000", what_drop_shadow = [ (2, 2) ], what_drop_shadow_color = "#000")
 
 
 
