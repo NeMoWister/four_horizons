@@ -246,23 +246,23 @@ init python:
     sound_of_running = "mods/four_horizons/Музыка/ambi/sound_of_running.mp3"
 
     #Музыка
-    $ Stigmata_September = "mods/four_horizons/Музыка/Stigmata -Сентябрь.mp3"
-    $ Yan_Shpitalnik_Two = "mods/four_horizons/Музыка/Yan Shpitalnik - Two.mp3"
-    $ Cross_Examination_Allegro = "mods/four_horizons/Музыка/OST Ace Attorney - Cross Examination Allegro.mp3"
-    $ Pursuit_Cornered = "mods/four_horizons/Музыка/OST Ace_Attorney - Pursuit_Cornered.mp3"
-    $ Klavier_Gavin_Guilty_Love = "mods/four_horizons/Музыка/Toshihiko_Horiyama_-_Klavier_Gavin_Guilty_Love.mp3"
-    $ quiet_night = "mods/four_horizons/Музыка/Кино - Спокойная ночь.mp3"
-    $ Gruppa_krovi = "mods/four_horizons/Музыка/Viktor_Cojj_-_Gruppa_krovi.mp3"
+    Stigmata_September = "mods/four_horizons/Музыка/Stigmata -Сентябрь.mp3"
+    Yan_Shpitalnik_Two = "mods/four_horizons/Музыка/Yan Shpitalnik - Two.mp3"
+    Cross_Examination_Allegro = "mods/four_horizons/Музыка/OST Ace Attorney - Cross Examination Allegro.mp3"
+    Pursuit_Cornered = "mods/four_horizons/Музыка/OST Ace_Attorney - Pursuit_Cornered.mp3"
+    Klavier_Gavin_Guilty_Love = "mods/four_horizons/Музыка/Toshihiko_Horiyama_-_Klavier_Gavin_Guilty_Love.mp3"
+    quiet_night = "mods/four_horizons/Музыка/Кино - Спокойная ночь.mp3"
+    Gruppa_krovi = "mods/four_horizons/Музыка/Viktor_Cojj_-_Gruppa_krovi.mp3"
 
 
 
 
 
     #Звуки
-    $ sound_of_zhiguli_leaving = "mods/four_horizons/Звуки/sound_of_zhiguli_leaving.mp3"
-    $ pull_handle_of_door = "mods/four_horizons/Звуки/pull_handle_of_door.mp3"
-    $ doused_with_water = "mods/four_horizons/Звуки/doused_with_water.mp3"
-    $ turning_on_light = "mods/four_horizons/Звуки/turning_on_light.mp3"
-    $ sfx_unlock_door = "mods/four_horizons/Звуки/sfx_unlock_door.mp3"
-    $ sound_of_running = "mods/four_horizons/Звуки/sound_of_running.mp3"
-    $ sound_of_pen_painting = "mods/four_horizons/Звуки/sound_of_pen_painting.mp3"
+    sound_of_zhiguli_leaving = "mods/four_horizons/Звуки/sound_of_zhiguli_leaving.mp3"
+    pull_handle_of_door = "mods/four_horizons/Звуки/pull_handle_of_door.mp3"
+    doused_with_water = "mods/four_horizons/Звуки/doused_with_water.mp3"
+    turning_on_light = "mods/four_horizons/Звуки/turning_on_light.mp3"
+    sfx_unlock_door = "mods/four_horizons/Звуки/sfx_unlock_door.mp3"
+    sound_of_running = "mods/four_horizons/Звуки/sound_of_running.mp3"
+    sound_of_pen_painting = "mods/four_horizons/Звуки/sound_of_pen_painting.mp3"
