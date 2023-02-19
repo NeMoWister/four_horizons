@@ -1,0 +1,448 @@
+Расположение спрайтов:                    | Интерефейсы                              |
+left, cleft, cright, right, fleft, fright | $ prolog_time() "Интерефейс пролога."    |
+__________________________________________| $ day_time() "Интерфейс дня."            |
+Бег                                       | $ sunset_time() "Интерфейс заката."      |
+scene БГ:                                 | $ night_time() "Интерфейс ночи."         |
+zoom 1.05anchor (48,27)                   |__________________________________________|
+ease 0.20pos (0, 0)                       | Помехи                                   |
+ease 0.20pos (25,25)                      | show prologue_dream (показать)           |
+ease 0.20pos (0, 0)                       | hide prologue_dream (скрыть)             |
+ease 0.20pos (-25,25)                     |__________________________________________|
+repeat                                    | Для сохранения                           |
+__________________________________________| $ save_name = ('Сцена. День')            |
+Моргание                                  |__________________________________________|
+show blink Закрыть глаза                  | Для смены дней                           |
+hide blink                                | $ new_chapter(3, u"Название сохранения") |
+show unblink Открыть глаза                |__________________________________________|
+__________________________________________|vpunch
+$ set_mode_nvl()                          |
+"Текст наверху включен."                  |
+$ set_mode_adv()                          |
+"Текст наверху отключен."                 |
+__________________________________________|
+Текст поверх экрана                       |
+window show                               |
+nvl clear                                 |
+__________________________________________|
+$ persistent.sprite_time = 'sunset'
+
+
+
+#полезные ссылки. продвинутые
+https://www.renpy.org/doc/html/3dstage.html - 3D в ренпай
+https://www.renpy.org/doc/html/live2d.html - анимированные спрайты. live2d
+https://www.renpy.org/doc/html/drag_drop.html drag-n-drop
+https://www.renpy.org/doc/html/multiple.html - несколько говорящих
+https://www.renpy.org/doc/html/matrix.html - !Работа с векторной графикой и 3д сценами с использованием матриц!
+
+
+Shift + O - консоль
+Jump to a label.
+Interactively try out Ren'Py script statements.
+Evaluate a Python expression or statement to see the result.
+Trace Python expressions as the game progresses.
+
+clear: clear the console history
+escape: Enables escaping of unicode symbols in unicode strings.
+exit: exit the console
+help: show this help
+jump <label>: jumps to label
+load <slot>: loads the game from slot
+long: Print the full representation of objects on the console.
+reload: reloads the game, refreshing the scripts
+save <slot>: saves the game in slot
+short: Shorten the representation of objects on the console (default).
+stack: print the return stack
+unescape: Disables escaping of unicode symbols in unicode strings and print it as is (default).
+unwatch <expression>: stop watching an expression
+unwatchall: stop watching all expressions
+watch <expression>: watch a python expression
+watch short: makes the representation of traced expressions short (default)
+watch long: makes the representation of traced expressions as is
+<renpy script statement>: run the statement
+<python expression or statement>: run the expression or statement
+
+
+#хрень для РКК
+$rkk_launch(1)
+files
+
+write_log
+
+
+
+
+
+
+#базовый пак конфига сохранений, интерфейса
+    $ backdrop = "days"
+    $ new_chapter(1, u"Название")
+    $ persistent.sprite_time = 'day'
+    $ day_time()
+
+
+#старый тест трансформов встроенных. linear можно выкинуть
+show un normal pioneer with move:
+        linear 0.7 xalign 1
+scene bg bus_stop with pushleft
+
+
+
+show me norm:
+        xanchor 0.0 xpos 1.0
+        easein 0.5 xcenter 0.75
+
+
+#мусор для невышедшего мода 7 дней до дембеля Xd
+#конструкция шлак, переделать
+    elif level == 0:
+        call screen ddd_0
+        screen ddd_0:
+            text "Пробел для удара":
+                style "ddd_screen"
+                yalign 0.1
+                xalign 0.5
+            key " "action (Jump("win_ddd_end"))
+            timer 3 action (Jump("fight1_ddd"))
+    elif level == 0:
+        call screen ddd_0
+        screen ddd_0:
+            text "Пробел для удара":
+                style "ddd_screen"
+                yalign 0.1
+                xalign 0.5
+            key " "action (Jump("win_ddd_end"))
+            timer 3 action (Jump("fight1_ddd"))
+    elif level == 0:
+        call screen ddd_0
+        screen ddd_0:
+            text "Пробел для удара":
+                style "ddd_screen"
+                yalign 0.1
+                xalign 0.5
+            key " "action (Jump("win_ddd_end"))
+            timer 3 action (Jump("fight1_ddd"))
+    elif level == 0:
+        call screen ddd_0
+        screen ddd_0:
+            text "Пробел для удара":
+                style "ddd_screen"
+                yalign 0.1
+                xalign 0.5
+            key " "action (Jump("win_ddd_end"))
+            timer 3 action (Jump("fight1_ddd"))
+    elif level == 0:
+        call screen ddd_0
+        screen ddd_0:
+            text "Пробел для удара":
+                style "ddd_screen"
+                yalign 0.1
+                xalign 0.5
+            key " "action (Jump("win_ddd_end"))
+            timer 3 action (Jump("fight1_ddd"))
+    elif level == 0:
+        call screen ddd_0
+        screen ddd_0:
+            text "Пробел для удара":
+                style "ddd_screen"
+                yalign 0.1
+                xalign 0.5
+            key " "action (Jump("win_ddd_end"))
+            timer 3 action (Jump("fight1_ddd"))
+    elif level == 0:
+        call screen ddd_0
+        screen ddd_0:
+            text "Пробел для удара":
+                style "ddd_screen"
+                yalign 0.1
+                xalign 0.5
+            key " "action (Jump("win_ddd_end"))
+            timer 3 action (Jump("fight1_ddd"))
+    elif level == 0:
+        call screen ddd_0
+        screen ddd_0:
+            text "Пробел для удара":
+                style "ddd_screen"
+                yalign 0.1
+                xalign 0.5
+            key " "action (Jump("win_ddd_end"))
+            timer 3 action (Jump("fight1_ddd"))
+
+
+
+
+
+
+#приколюхи с текстовыми тегами
+"{cps=225}Я ничего не чувствую.{nw}{/cps}"
+"{cps=225}Я ничего не чувствую.{nw}{/cps}"
+"{cps=225}Я ничего не чувствую.{nw}{/cps}"
+"{cps=200}Я ничего не чувствую.{nw}{/cps}"
+"{cps=200}Я ничего не чувствую.{nw}{/cps}"
+
+
+#экран выхода
+text 'Ты вновь хочешь уйти?':
+        style "nd_text_big_save_load"
+        size 110
+        drop_shadow [(2, 1)]
+        color "#ffffff"
+        text_align 0.5
+        align(0.5,0.5)
+        pos(867, 248)     #moded: pos(1300, 372)
+        antialias True
+        kerning 2
+
+
+переходы https://www.renpy.org/doc/html/transitions.html
+
+
+
+
+
+#мусор из булок, можно выкинуть
+python:
+
+        bkrr_circlein_transition = ImageDissolve(BKRR_IMAGES + "transitions/circle.png", 0.5, ramplen=5, reverse = True, alpha=True)
+        bkrr_circleout_transition = ImageDissolve(BKRR_IMAGES + "transitions/circle.png", 0.5, ramplen=5, reverse = False, alpha=True)
+        bkrr_star_falling_transition = ImageDissolve(BKRR_IMAGES + "transitions/star_falling.png", 1.0, ramplen=5, reverse = False, alpha=True)
+
+        bkrr_blindstoleft_transition = ImageDissolve(BKRR_IMAGES + "transitions/blinds_h.png", 1.0, ramplen=25, reverse = False, alpha=True)
+        bkrr_blindstoright_transition = ImageDissolve(BKRR_IMAGES + "transitions/blinds_h.png", 1.0, ramplen=25, reverse = True, alpha=True)
+        bkrr_blindstotop_transition = ImageDissolve(BKRR_IMAGES + "transitions/blinds_v.png", 1.0, ramplen=25, reverse = False, alpha=True)
+        bkrr_blindstobottom_transition = ImageDissolve(BKRR_IMAGES + "transitions/blinds_v.png", 1.0, ramplen=25, reverse = True, alpha=True)
+
+        def bkrr_timeskip_transition(t=1.0):
+            return ImageDissolve(BKRR_IMAGES + "transitions/timeskip.png", t, ramplen=0, reverse=False, alpha=True)
+
+
+
+
+
+
+# анимация тумана, тоже можно выкинуть
+show fogcamp2 animated with dspr:
+        "fogcamp2" with dissolve
+        pause 0.2
+        "fogcamp3" with dissolve
+        pause 0.1
+        "fogcamp4" with dissolve
+        pause 0.2
+        "fogcamp5" with dissolve
+        pause 0.1
+        "fogcamp6" with dissolve
+        pause 0.2
+        "fogcamp7" with dissolve
+        pause 0.1
+        "fogcamp8" with dissolve
+        pause 0.2
+        "fogcamp9" with dissolve
+        pause 0.1
+        "fogcamp10" with dissolve
+        pause 0.2
+        "fogcamp9" with dissolve
+        pause 0.1
+        "fogcamp8" with dissolve
+        pause 0.2
+        "fogcamp7" with dissolve
+        pause 0.1
+        "fogcamp6" with dissolve
+        pause 0.2
+        "fogcamp5" with dissolve
+        pause 0.1
+        "fogcamp4" with dissolve
+        pause 0.2
+        "fogcamp3" with dissolve
+        pause 0.1
+        "fogcamp2" with dissolve
+        pause 0.2
+        repeat
+        #хз, не помню что это за мусор
+        zoom 1.05anchor (48,27)
+        ease 0.20pos (0, 0)
+        ease 0.20pos (25,25)
+        ease 0.20pos (0, 0)
+        ease 0.20pos (-25,25)
+        repeat
+
+
+	  #msi afterburner. renpy edition.
+        label _fps_meter
+
+        screen _performance
+
+        config.predict_start_labels = [ "start" ] #стартовый лейбл новеллы
+        allow_integrated_gpu = True #рендер на гпу. будет смешно если его отключить
+        config.default_mouse_move = True #настройки мышки
+
+	  #настройка громкости по каналам
+        config.default_music_volume = 1.0
+        config.default_sfx_volume = 1.0
+        config.default_voice_volume = 1.0
+
+	  #внутриигровые покупки, ведро. и ios по идеи
+        class AndroidBackend(object):
+        """
+        The IAP backend that is used when IAP is supported.
+        """
+
+        def __init__(self, store, store_name):
+            self.store = store
+            self.store_name = store_name
+
+            self.store.clearSKUs()
+
+            for p in products.values():
+                self.store.addSKU(self.identifier(p))
+
+        def get_store_name(self):
+            return self.store_name
+
+        def identifier(self, p):
+            """
+            Returns the identifier for a store purchase.
+            """
+
+            if self.store_name == "amazon":
+                return p.amazon
+            else:
+                return p.google
+
+        def wait_for_result(self, interact=True):
+            """
+            Waits for a result.
+
+            `interact`
+                If true, waits interactively. If false, waits using
+                renpy.pause.
+            """
+
+            while not self.store.getFinished():
+                if interact:
+                    renpy.pause(.1)
+                else:
+                    time.sleep(.1)
+
+        def purchase(self, p, interact=True):
+            identifier = self.identifier(p)
+            self.store.beginPurchase(identifier)
+            self.wait_for_result(interact=interact)
+
+        def restore_purchases(self, interact=True):
+            self.store.updatePrices();
+            self.wait_for_result(interact)
+
+            self.store.restorePurchases();
+            self.wait_for_result(interact)
+
+        def has_purchased(self, p):
+            identifier = self.identifier(p)
+            return self.store.hasPurchased(identifier)
+
+        def consume(self, p):
+            return False
+
+        def is_deferred(self, p):
+            return False
+
+        def get_price(self, p):
+            identifier = self.identifier(p)
+            return self.store.getPrice(identifier)
+
+        def init(self):
+            restore(False)
+
+
+
+        def register(product, identifier=None, amazon=None, google=None, ios=None, consumable=False):
+        """
+        :doc: iap
+
+        Registers a product with the in-app purchase system.
+
+        `product`
+            A string giving the high-level name of the product. This is the
+            string that will be passed to :func:`iap.purchase`, :func:`iap.Purchase`,
+            and :func:`iap.has_purchased` to represent this product.
+
+        `identifier`
+            A string that's used to identify the product internally. Once used
+            to represent a product, this must never change. These strings are
+            generally of the form "com.domain.game.product".
+
+            If None, defaults to `product`.
+
+        `amazon`
+            A string that identifies the product in the Amazon app store.
+            If not given, defaults to `identifier`.
+
+        `google`
+            A string that identifies the product in the Google Play store.
+            If not given, defaults to `identifier`.
+
+        `ios`
+            A string that identifies the product in the Apple App store for
+            iOS. If not given, defaults to `identifier`.
+
+        `consumable`
+            True if this is a consumable purchase. Right now, consumable purchases
+            are only supported on iOS.
+        """
+
+        if product in products:
+            raise Exception('Product %r has already been registered.' % product)
+
+        identifier = identifier or product
+        amazon = amazon or identifier
+        google = google or identifier
+        ios = ios or identifier
+
+        p = Product(product, identifier, google, amazon, ios, consumable)
+        products[product] = p
+
+
+
+
+
+
+
+        #!ПРИМЕР ТОГО КАК МОЖНО ОРГАНИЗОВАТЬ ПОДДЕРЖКУ МАСТЕРСКОЙ СО СТОРОНЫ ПОЛЬЗОВАТЕЛЯ
+        commondir = __main__.path_to_common(renpy.config.renpy_base)
+        if os.path.exists("/esmods"):
+            new_paths = []
+            for name in os.listdir("/esmods"):
+                if os.path.isdir(os.path.join("/esmods", name)):
+                    new_paths.append("/esmods"+name)
+            renpy.config.searchpath += new_paths
+        except:
+            pass
+
+
+
+
+        #код, отвечающий за генерацию rpyc
+        if (renpy.game.args.command == 'compile') and not (renpy.game.args.keep_orphan_rpyc):  # @UndefinedVariable
+
+        for (fn, dn) in renpy.game.script.script_files:
+
+            if dn is None:
+                continue
+
+            if not os.path.isfile(os.path.join(dn, fn + ".rpy")):
+
+                try:
+                    name = os.path.join(dn, fn + ".rpyc")
+                    os.rename(name, name + ".bak")
+                except OSError:
+                    # This perhaps shouldn't happen since either .rpy or .rpyc should exist
+                    pass
+    renpy.game.script.load_script()
+
+
+    # мусор для добавления подсказок в ATOM
+   'Bgs':
+    prefix: 'scene bg'
+    body: 'scene bg bus_stop'
+   'Bg1':
+    prefix: 'scene bg'
+    body: 'scene bg ext_aidpost_day'

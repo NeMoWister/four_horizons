@@ -1,0 +1,72 @@
+﻿music_list["410"]                                   ## Совпадает с названием из галереи
+music_list["a_promise_from_distant_days"]			## Совпадает с названием из галереи
+music_list["a_promise_from_distant_days_v2"]		## Совпадает с названием из галереи
+music_list["afterword"]								## Совпадает с названием из галереи
+music_list["always_ready"]							## Совпадает с названием из галереи
+music_list["awakening_power"]						## Совпадает с названием из галереи
+music_list["blow_with_the_fires"]					## Музыка из меню
+music_list["confession_oboe"]						## Совпадает с названием из галереи
+music_list["dance_of_fireflies"]					## Совпадает с названием из галереи
+music_list["dinner_horn_processed"]					## Горн в столовую
+music_list["doomed_to_be_defeated"]					## Момент, когда происходит дичь
+music_list["door_to_nightmare"]						## Совпадает с названием из галереи
+music_list["doubt_everyone"]						## Не работает
+music_list["drown"]									## Совпадает с названием из галереи
+music_list["eat_some_trouble"]						## Совпадает с названием из галереи
+music_list["eternal_longing"]						## Совпадает с названием из галереи
+music_list["everlasting_summer"]					## Совпадает с названием из галереи
+music_list["everyday_theme"]						## Feeling Good
+music_list["faceless"]								## Совпадает с названием из галереи
+music_list["farewell_to_the_past_edit"]				## Совпадает с названием из галереи(edit-Короткая)
+music_list["farewell_to_the_past_full"]				## Совпадает с названием из галереи(full-не образанная)
+music_list["forest_maiden"]							## Совпадает с названием из галереи
+music_list["gentle_predator"]						## Совпадает с названием из галереи
+music_list["get_to_know_me_better"]					## Совпадает с названием из галереи
+music_list["glimmering_coals"]						## Совпадает с названием из галереи
+music_list["goodbye_home_shores"]					## Совпадает с названием из галереи
+music_list["heather"]								## Совпадает с названием из галереи
+music_list["i_dont_blame_you"]						## Совпадает с названием из галереи
+music_list["i_want_to_play"]						## Совпадает с названием из галереи
+music_list["into_the_unknown"]						## Совпадает с названием из галереи
+music_list["just_think"]							## Совпадает с названием из галереи
+music_list["kostry"]								## Взвейтесь кострами на электрогитаре
+music_list["lets_be_friends"]						## Совпадает с названием из галереи
+music_list["lightness"]								## Совпадает с названием из галереи(нормальная)
+music_list["lightness_radio_bus"]					## Совпадает с названием из галереи(В автобусе)
+music_list["meet_me_there"]							## Совпадает с названием из галереи
+music_list["memories"]								## Совпадает с названием из галереи
+music_list["memories_piano_outdoors"]				## Совпадает с названием из галереи(Игра на пианино)
+music_list["miku_song_flute"]						## Песня Мику без голоса
+music_list["miku_song_voice"]						## Песня Мику с голосом
+music_list["my_daily_life"]							## Совпадает с названием из галереи
+music_list["mystery_girl_v2"]						## Совпадает с названием из галереи(Mystery Girl)
+music_list["no_tresspassing"]						## Совпадает с названием из галереи
+music_list["opening"]								## Совпадает с названием из галереи
+music_list["orchid"]								## Совпадает с названием из галереи
+music_list["pile"]									## Совпадает с названием из галереи
+music_list["pioneer2_loudspeaker_tape"]				## Не работает
+music_list["raindrops"]								## Совпадает с названием из галереи
+music_list["reflection_on_water"]					## Совпадает с названием из галереи
+music_list["reminiscences"]							## Совпадает с названием из галереи
+music_list["revenga"]								## Совпадает с названием из галереи
+music_list["scarytale"]								## Совпадает с названием из галереи
+music_list["she_is_kind"]							## Совпадает с названием из галереи
+music_list["silhouette_in_sunset"]					## Совпадает с названием из галереи
+music_list["smooth_machine"]						## Совпадает с названием из галереи
+music_list["so_good_to_be_careless"]				## Совпадает с названием из галереи
+music_list["sparkles"]								## Совпадает с названием из галереи
+music_list["sunny_day"]								## Совпадает с названием из галереи
+music_list["sweet_darkness"]						## Совпадает с названием из галереи
+music_list["take_me_beautifully"]					## Совпадает с названием из галереи
+music_list["that_s_our_madhouse"]					## Совпадает с названием из галереи
+music_list["timid_girl"]							## Совпадает с названием из галереи
+music_list["torture"]								## Совпадает с названием из галереи
+music_list["trapped_in_dreams"]						## Совпадает с названием из галереи
+music_list["tried_to_bring_it_back"]				## Совпадает с названием из галереи
+music_list["two_glasses_of_melancholy"]				## Совпадает с названием из галереи
+music_list["waltz_of_doubts"]						## Совпадает с названием из галереи
+music_list["went_fishing_caught_a_girl"]			## Совпадает с названием из галереи
+music_list["what_do_you_think_of_me"]				## Совпадает с названием из галереи
+music_list["you_lost_me"]							## Совпадает с названием из галереи
+music_list["you_won_t_let_me_down"]					## Совпадает с названием из галереи
+music_list["your_bright_side"]						## Совпадает с названием из галереи
