@@ -6132,7 +6132,7 @@ label four_horizons:
 label song_1:
     window hide
     show expression 'mods/four_horizons/cg/guitar_un.png' with dissolve
-    play sound 'mods/four_horizons/Музыка/Танцы минус - Половинка.mp3'
+    play sound 'mods/four_horizons/Музыка/Танцы минус - Половинка.mp3' volume 1.0
     $ renpy.pause(12, hard = True)
     show text '{font=mods/four_horizons/VinSlabPro-LightItalic.ttf}{size=100}У ночного огня\nПод огромной луной{/size}{/font}' at center with dspr
     $ renpy.pause(4.8, hard = True)
