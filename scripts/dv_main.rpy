@@ -475,6 +475,7 @@ label four_horizons_dv:
     th 'Может, тут и будет что-то светлое в моей грёбаной жизни.'
     th 'Неужели моё желание исправить свои ошибки прошлого сбылось?'
     'Только вот всемогущий шутник перепутал времена.'
+    scene bg int_house_of_str_day with dissolve
     'Я посмотрел на часы.'
     th 'Ага ещё два часа до ужина. Есть время прогуляться по лагерю да посмотреть что и как.'
     show expression 'images/maps/map.jpg'as dmap with dissolve
@@ -621,7 +622,7 @@ label four_horizons_dv:
     th 'Мог ещё сказать, прям умираю, но это палево было бы.'
     un 'У тебя есть карта?'
     al 'Да, сейчас достану.'
-    show expression 'images/maps/map.jpg'as dmap with dissolve
+    show expression 'mods/four_horizons/bg/map_bg.jpg'as dmap with dissolve
     'Я быстренько достал свою карту.'
     'Лена показала на карте одно местечко, а именно кустики у домиков.'
     un 'Вот тут вожатая почти никогда не ходит. Шанс того, что она там появится чрезмерно мал.'
@@ -1150,6 +1151,7 @@ label four_horizons_dv:
     with dspr
     us 'Ладно, прости за крабика, я пошла. Если что я на футбольном поле.'
     dv 'Ладно, я не дуюсь на тебя, но больше так не делай!'
+    hide us with dspr
     'Ульяна побежала обратно на спортплощадку, оставив меня наедине с рыжим бунтарём.'
     show dv normal swim with dspr
     al 'Иди переодевайся, а потом я.'
@@ -1249,7 +1251,7 @@ label four_horizons_dv:
     sl 'Я с Семёном договорилась, что он принесёт мне ужин.'
     al 'Ладно, не скучай.'
     'Я вышел из медпункта.'
-    scene bg ext_aidpost_night with dissolve
+    scene bg ext_aidpost_day with dissolve
     th 'Конечно, было бы неплохо покурить, но раз ужин будет, то сначала надо заправиться, и только потом уже покурить.'
     'Именно с этими мыслями, словно по команде я направился в столовую.'
     scene bg ext_dining_hall_near_sunset with dissolve
@@ -1260,7 +1262,6 @@ label four_horizons_dv:
     th 'Ну, чай тоже не плохо, правда, жаль пиво сюда с собой не притащишь.'
     'Я сел на свободное место и прозвучал горн.'
     scene bg int_din_sunset with dissolve
-    'нет фона с людьми вечером'
     'Вскоре столовая битком стала набиваться.'
     'Не прошло и пяти минут, как столовая уже была переполнена, а младшие отряды слишком жадно поедали свой ужин.'
     th 'Вас что, дома совсем не кормят что ли?'
@@ -1300,7 +1301,7 @@ label four_horizons_dv:
     'Но тут мою мысль прервали девичьи крики.'
     th 'Опа, женский махач пропускать нельзя.'
     'Я тут же побежал на звук.'
-    scene bg home_night2 with dissolve
+    scene expression 'mods/four_horizons/bg/ext_dvstory.jpg' with dissolve
     'Возле моего домика громко ругались Лена и Алиса.'
     'Они ругались так громко, что скоро весь лагерь начинал потихоньку собираться  у моего дома.'
     show dv angry pioneer at left
@@ -1316,17 +1317,18 @@ label four_horizons_dv:
     un 'ВСЁ! Я ДОЛГО ЭТО ТЕРПЕЛА! ТЫ МЕНЯ ДОСТАЛА!'
     dv 'А ну не ори на ме..'
     un 'ЗАВАЛИ СВОЙ РОТ!'
-    show cg d6_dv_fight with dissolve
+    show expression 'mods/four_horizons/cg/punch1.png' with dissolve
     'Вот это психанула, так психанула.'
     'Лена жёстко ударила Алису прямо в челюсть.'
     'Удар был настолько жёсткий, что Алиса упала на каменную тропинку.'
     al 'Епт твою мать!'
-    show cg d6_dv_fight_2 with dissolve
+    show cg d6_dv_fight with dissolve
     'Я не выдержал и тут же подбежал к Алисе.'
     'Она вроде бы в сознании, но глаз не открывала.'
     th 'Ну жива и уже хорошо!'
     al 'Что вы творите? Сдурели что ли обе?'
     'Попытался привести в чувства Алису. И не заметил, как вокруг нас сбежался весь лагерь.'
+    show cg d6_dv_fight_2 with dissolve
     th 'Зашибись! Хрен теперь от этих зевак отвалишь!'
     'Вдруг среди толпы появилась вожатая, которая тут же принялась орать и разгонять всех подряд.'
     mt 'Так! Все разошлись по домам! Тихонова, ко мне в домик! Семён, помоги Двачевскую донести до моего домика. Алексей, задержись!'
@@ -1700,8 +1702,8 @@ label four_horizons_dv:
     th 'Хотела пойти к Алисе за помощью, а она говорит, что видеть меня больше не хочет, что я ей порчу жизнь! И тогда у меня началась депрессия, я создала себе маску. Я часто прогуливала школу, несмотря на то, что оценки у меня были хорошие, просто чтобы не терпеть всё это.'
     th 'Я не понимала, за что она со мной так, чем я это заслужила? Я знала все больные темы Алисы и всячески ей помогала, как и она мне. Почему в этот раз я такое отношение заслужила?'
     $ set_mode_adv()
-    show dv surprise
-    show un cry
+    show dv surprise at left
+    show un cry at right
     with dspr
     'Лена уже сильно плакала, но твёрдо решила закончить. Сквозь слёзы она продолжила говорить. Я размеренно качался на стуле.'
     un 'Теперь я понимаю... ты посчитала, что я отбиваю у тебя парней... Но, Алиса, почему ты ко мне с этим не подошла сразу? Мне не нужны были эти парни. Я жду своего принца...'
@@ -1961,8 +1963,8 @@ label four_horizons_dv:
     mt 'Напоминаю, что через 2 дня у нас творческий прощальный вечер, и каждый должен что-то продемонстрировать! Для Лены и Алисы наказание завершено. Разойтись!'
     scene bg ext_square_day with dissolve
     show mt normal pioneer panama
-    show el normal pioneer far at cleft
-    show sh normal pioneer far at cright
+    show el normal pioneer far at left
+    show sh normal pioneer far at fleft
     with dspr
     'Я собирался уже побежать на спортплощадку к Семёну, как меня остановили вожатая и два кибернетика.'
     mt 'Алексей! Не поможешь парням с обустройством площади для вечерних танцев?'
@@ -2346,8 +2348,7 @@ label four_horizons_dv:
     'Лена сидела и рисовала в своей тетрадке что-то.'
     th 'Хотя, чему я удивляюсь, она же художница.'
     show mi normal pioneer far at cright
-    show se normal at right:
-        zoom 0.8
+    show se normal at fright
     with dspr
     'Семён и Мику играли в карты.'
     th 'Интересно в подкидного или переводного. Это явно не покер и не блэкджэк'
@@ -2514,9 +2515,9 @@ label four_horizons_dv:
     un 'Это мы.'
     'Из кустов вышли Лена, Виола и Семён.'
     show dv normal at center with ease
-    show un normal pioneer at right
+    show un normal pioneer at fright
     show se normal at cleft
-    show cs normal at left
+    show cs normal at fleft
     with dspr
     cs 'Здравствуйте, наши маленькие мятежники! Разрешите составить компанию?'
     mi 'Да, конечно!'
@@ -2695,8 +2696,8 @@ label four_horizons_dv:
     scene bg int_dining_hall_day with dissolve
     'На завтрак сегодня была гречка и мясо.'
     'Среди нашей компании я заметил Семёна и Мику, которые сидели за одним столом.'
-    show se normal at right
-    show mi normal pioneer at left
+    show se normal at cright
+    show mi normal pioneer at cleft
     with dspr
     al 'Банда, я к вам присяду?'
     me 'Конечно!'
@@ -2711,7 +2712,7 @@ label four_horizons_dv:
     me 'Ага. Даже мне, несмотря на то, что я сотрудник лагеря. Правда, последний год. Мне даже банку пива выпить нельзя!'
     al 'Сейчас бы пивка... эх...'
     show dv normal pioneer
-    show un normal pioneer at cleft
+    show un normal pioneer at fleft
     with dspr
     dv 'И мне тогда тоже прихвати.'
     'К нам подсели Алиса и Лена, а рыжая вовсе ещё меня и по плечу хлопнула.'
@@ -2851,9 +2852,9 @@ label four_horizons_dv:
     al 'Тоже надеюсь. Мы вроде создали крепкий круг общения, новых членов вводить у меня нет никакого желания.'
     me 'А нам нафиг другие не нужны.'
     'Сзади подошли Семён, Виола и Мику. Мику была с гитарой.'
-    show se normal at cleft
-    show cs normal at left
-    show mi normal pioneer at right
+    show se normal at cleft behind dv
+    show cs normal at fleft
+    show mi normal pioneer at fright
     with dspr
     mi 'Так, я сейчас закину гитару в домик и пойду тоже искупаюсь'
     cs 'Я с тобой.'
