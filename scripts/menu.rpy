@@ -80,10 +80,10 @@ screen menu_main():
         textbutton "Выход" at fh_button:
             style "fhs"
             text_style "fhs"
-            action Quit()
+            action (Hide('menu_main'), Stop("music"), Call('main'))
             
             
-    
+
 label menu_fh:
     call screen menu_main with dissolve
     jump four_horizons
