@@ -19,7 +19,7 @@ init python:
             self.sm = SpriteManager(update=self.update)
 
             self.glows = [ ]
-            self.rd = "mods/four_horizons/cutm.png"
+            self.rd = "mods/four_horizons/firedrop.png"
 
             d = Transform(self.rd, zoom=0.25)
             for i in range(0, 50):
@@ -46,8 +46,8 @@ init python:
     renpy.image("cutm", CutM().sm)
     
 transform fh_menu:
-    alpha 0 xalign 1.3
-    ease 2.5 alpha 1.0 xalign 0.9
+    alpha 0 xalign -0.5
+    ease 2.5 alpha 1.0 xalign 0.05
     
         
 transform fh_button:
@@ -62,13 +62,13 @@ screen menu_main():
     add "main_img"
     add (CutM().sm)
     vbox at fh_menu:
-        spacing 20
-        xalign 0.9
+        spacing 30
+        xalign 0.1
         yalign .5
         textbutton "Начать" at fh_button:
             style "fhs"
             text_style "fhs"
-            action (Hide("menu_main", Dissolve(1.0)), Return())
+            action (Hide("menu_main", Dissolve(1.0)), Return(), Stop("music"))
         textbutton "Загрузить" at fh_button:
             style "fhs"
             text_style "fhs"
@@ -85,5 +85,5 @@ screen menu_main():
             
     
 label menu_fh:
-    call screen sova_main with dissolve
+    call screen menu_main with dissolve
     jump four_horizons
