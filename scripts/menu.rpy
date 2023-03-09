@@ -22,7 +22,7 @@ init python:
 
             self.sm = SpriteManager(update=self.update)
 
-            self.glows = [ ]
+            self.glows = []
             self.rd = "mods/four_horizons/firedrop.png"
 
             d = Transform(self.rd, zoom=0.25)
@@ -116,15 +116,25 @@ screen fh_ch:
             #hover_background '':
                 #xalign 0.0 yalign 0.0
     showif n == 0:
-        add 'main_img'
+        add 'main_img':
+                alpha 0.0
+                linear .5 alpha 1.0
     elif n == 1:
-        add 'un_main'
+        add 'un_main':
+                alpha 0.0
+                linear .5 alpha 1.0
     elif n == 2:
-        add 'dv_main'
+        add 'dv_main':
+                alpha 0.0
+                linear .5 alpha 1.0
     elif n == 3:
-        add 'us_main'
+        add 'us_main':
+                alpha 0.0
+                linear .5 alpha 1.0
     elif n == 4:
-        add 'sl_main'
+        add 'sl_main':
+                alpha 0.0
+                linear .5 alpha 1.0
             
 
 label menu_fh:
