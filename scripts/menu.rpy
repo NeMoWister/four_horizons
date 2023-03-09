@@ -122,9 +122,9 @@ screen fh_ch:
     elif n == 2:
         add 'dv_main'
     elif n == 3:
-        add 'sl_main'
+        add 'us_main'
     elif n == 4:
-        add 
+        add 'sl_main'
             
 
 label menu_fh:
