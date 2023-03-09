@@ -1,5 +1,9 @@
 init:
-    image main_img = im.Scale("mods/four_horizons/cg/dance_night.png", 1920, 1080)
+    image main_img = im.Scale("mods/four_horizons/cg/ext_boathouse_alt_night_7dl.jpg", 1920, 1080)
+    image us_main = im.Scale("mods/four_horizons/cg/IMG_7046.png", 1920, 1080)
+    image dv_main = im.Scale("mods/four_horizons/cg/dv_sem.png", 1920, 1080)
+    image sl_main = im.Scale("mods/four_horizons/cg/IMG_7353.png", 1920, 1080)
+    image un_main = im.Scale("mods/four_horizons/cg/dance_night.png", 1920, 1080)
     $ mods["menu_fh"]=u"Четыре горизонта. Меню."
     
     
@@ -81,7 +85,46 @@ screen menu_main():
             style "fhs"
             text_style "fhs"
             action (Hide('menu_main'), Stop("music"), Call('main'))
-            
+
+
+screen fh_ch:
+    vbox at fh_menu:
+        default n = 0
+        spacing 30
+        xalign 0.1
+        yalign 0.5:
+        textbutton 'Лена' at fh_button:
+            style 'fhs'
+            text_style 'fhs'
+            hovered SetScreenVariable(n, 1)
+        textbutton 'Алиса' at fh_button:
+            style 'fhs'
+            text_style 'fhs'
+            hovered SetScreenVariable(n, 2)
+        textbutton 'Ульяна' at fh_button:
+            style 'fhs'
+            text_style 'fhs'
+            hovered SetScreenVariable(n, 3)
+        textbutton 'Славя' at fh_button:
+            style 'fhs'
+            text_style 'fhs'
+            hovered SetScreenVariable(n, 4)
+        textbutton 'Назад' at fh_button:
+            style 'fhs'
+            text_style 'fhs'
+            hovered SetScreenVariable(n, 0)
+            #hover_background '':
+                #xalign 0.0 yalign 0.0
+    showif n == 0:
+        add 'main_img'
+    elif n == 1:
+        add 'un_main'
+    elif n == 2:
+        add 'dv_main'
+    elif n == 3:
+        add 'sl_main'
+    elif n == 4:
+        add 
             
 
 label menu_fh:
