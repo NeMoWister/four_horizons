@@ -1,5 +1,5 @@
 init:
-    image main_img = im.Scale("mods/four_horizons/cg/ext_boathouse_alt_night_7dl.jpg", 1920, 1080)
+    image main_img = im.Scale("mods/four_horizons/bg/ext_boathouse_alt_night_7dl.jpg", 1920, 1080)
     image us_main = im.Scale("mods/four_horizons/cg/IMG_7046.png", 1920, 1080)
     image dv_main = im.Scale("mods/four_horizons/cg/dv_sem.png", 1920, 1080)
     image sl_main = im.Scale("mods/four_horizons/cg/IMG_7353.png", 1920, 1080)
@@ -54,7 +54,10 @@ init python:
 transform fh_menu:
     alpha 0 xalign -0.5
     ease 2.5 alpha 1.0 xalign 0.05
-    
+
+transform fh_mn:
+    alpha 0.0
+    linear 0.5 alpha 1.0
         
 transform fh_button:
     on idle:
@@ -74,7 +77,7 @@ screen menu_main():
         textbutton "Начать" at fh_button:
             style "fhs"
             text_style "fhs"
-            action (Hide("menu_main", Dissolve(1.0)), Return(), Stop("music"))
+            action ShowMenu('fh_ch')
         textbutton "Загрузить" at fh_button:
             style "fhs"
             text_style "fhs"
@@ -95,7 +98,7 @@ screen fh_ch:
         default n = 0
         spacing 30
         xalign 0.1
-        yalign 0.5:
+        yalign 0.5
         textbutton 'Лена' at fh_button:
             style 'fhs'
             text_style 'fhs'
@@ -119,25 +122,16 @@ screen fh_ch:
             #hover_background '':
                 #xalign 0.0 yalign 0.0
     showif n == 0:
-        add 'main_img':
-                alpha 0.0
-                linear .5 alpha 1.0
+        pass
+        add 'main_img' at fh_mn
     elif n == 1:
-        add 'un_main':
-                alpha 0.0
-                linear .5 alpha 1.0
+        add 'un_main' at fh_mn
     elif n == 2:
-        add 'dv_main':
-                alpha 0.0
-                linear .5 alpha 1.0
+        add 'dv_main' at fh_mn
     elif n == 3:
-        add 'us_main':
-                alpha 0.0
-                linear .5 alpha 1.0
+        add 'us_main' at fh_mn
     elif n == 4:
-        add 'sl_main':
-                alpha 0.0
-                linear .5 alpha 1.0
+        add 'sl_main' at fh_mn
             
 
 label menu_fh:
