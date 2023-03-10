@@ -6,7 +6,7 @@ init:
     image un_main = im.Scale("mods/four_horizons/cg/dance_night.png", 1920, 1080)
     $ mods["menu_fh"]=u"Четыре горизонта. Меню."
 
-    $ credits_fh = '{/color='#ff0000'}Дисклеймер{/color}.\nВсе истории и персонажи является фантазией сценариста.\nЛюбое совпадение с реальностью - чистая случайность.'
+    $ credits_fh = '{color='#ff0000'}Дисклеймер{/color}.\nВсе истории и персонажи является фантазией сценариста.\nЛюбое совпадение с реальностью - чистая случайность.'
     
     
 init python:
@@ -57,7 +57,12 @@ transform fh_menu:
 
 transform fh_mn:
     alpha 0.0
-    linear 0.5 alpha 1.0
+    on appear:
+        alpha 1.0
+    on show:
+        linear 0.5 alpha 1.0
+    on hide:
+        linear 0.5 alpha 1.0
         
 transform fh_button:
     on idle:
@@ -137,3 +142,9 @@ screen fh_ch:
 label menu_fh:
     call screen menu_main with dissolve
     jump four_horizons
+
+label credits_fh:
+    scene black with dissolve
+    text credits_fh at truecenter with dissolve:
+        size 100
+    return
