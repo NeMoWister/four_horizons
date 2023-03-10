@@ -4479,6 +4479,7 @@ label Four_horizons_Maxim_story_day1:
     "(Я искренне благодарю всех за прочтение данной истории и желаю вам всего самого лучшего!)"
 
     label Four_horizons_Maxim_story_prologue:
+    call credits_fh
     $ save_name = ('Четыре горизонта.\nИстория Максима.\nПролог.\nНеужели отдых?')
     $ persistent.sprite_time = "day"
     $ prolog_time()

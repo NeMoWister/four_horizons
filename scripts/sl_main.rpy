@@ -5493,6 +5493,7 @@ label Four_horizons_Kirril_story_epilogue:
 
 
 label Four_horizons_Kirril_story_prologue:
+    call credits_fh
     $ save_name = ('Четыре горизонта.\nИстория Флегматика.\nПролог.\nПодарок дедушки.')
     $ prolog_time()
     $ persistent.sprite_time = "day"

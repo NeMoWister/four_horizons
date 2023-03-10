@@ -3,6 +3,7 @@ init:
     $config.developer = True
 
 label four_horizons_dv:
+    call credits_fh
     $ new_chapter(-1, u"Пролог.\nСуровая реальность.")
     scene anim prolog_1 with dissolve
     $ set_mode_nvl()

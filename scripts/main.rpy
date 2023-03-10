@@ -3,6 +3,7 @@ init:
     $ config.developer = True
 
 label four_horizons:
+    call credits_fh
     scene black with dissolve
     $ prolog_time()
     $ new_chapter(-1, u"История Виталия.\nПролог.\nДень рождение.")
