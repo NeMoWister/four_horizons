@@ -5,6 +5,8 @@ init:
     image sl_main = im.Scale("mods/four_horizons/cg/IMG_7353.png", 1920, 1080)
     image un_main = im.Scale("mods/four_horizons/cg/dance_night.png", 1920, 1080)
     $ mods["menu_fh"]=u"Четыре горизонта. Меню."
+
+    $ credits_fh = '{/color='#ff0000'}Дисклеймер{/color}.\nВсе истории и персонажи является фантазией сценариста.\nЛюбое совпадение с реальностью - чистая случайность.'
     
     
 init python:
@@ -88,6 +90,7 @@ screen menu_main():
 
 
 screen fh_ch:
+    modal True
     vbox at fh_menu:
         default n = 0
         spacing 30
