@@ -6,15 +6,8 @@ init:
     image un_main = im.Scale("mods/four_horizons/cg/dance_night.png", 1920, 1080)
     $ mods["menu_fh"]=u"Четыре горизонта. Меню."
 
-    $ credits_fh = '{color='#ff0000'}Дисклеймер{/color}.\nВсе истории и персонажи является фантазией сценариста.\nЛюбое совпадение с реальностью - чистая случайность.'
-    $ credits_fh_v2 = '''
-    Дисклеймер.
-    Перед началом игры, пожалуйста, ознакомьтесь с данной информацией.
-
-    Эта игра предназначена только для развлекательных целей и не имеет никакой связи с реальностью.\nВсе персонажи, события и диалоги являются вымышленными и не являются настоящими.
-
-    Игра может содержать материалы, которые могут оказаться неуместными для некоторых игроков, включая сцены насилия, жестокости, сексуальные сцены или нецензурную лексику.\nИгроки, которые не желают видеть такие материалы, должны прекратить игру.
-    '''
+    $ credits_fh = '{color=#ff0000}{size=120}Дисклеймер{/color}{/size}.\nВсе истории и персонажи является фантазией сценариста.\nЛюбое совпадение с реальностью - чистая случайность.'
+    $ credits_fh_v = '{color=#ff0000}{size=60}Дисклеймер{/color}{/size}\n\n{size=40}Перед началом игры, пожалуйста, ознакомьтесь с данной информацией.\n\nЭта игра предназначена только для развлекательных целей и не имеет никакой связи с реальностью.\nВсе персонажи, события и диалоги являются вымышленными и не являются настоящими.{/size}'
 
 
 
@@ -83,6 +76,7 @@ transform fh_button:
     
 
 screen menu_main():
+    modal True
     timer 0.00001 action Play("music", "mods/four_horizons/music/Z FEEL-Z-Hear The Wind-kissvk.com.mp3")
     add "main_img"
     add (CutM().sm)
@@ -105,57 +99,46 @@ screen menu_main():
         textbutton "Выход" at fh_button:
             style "fhs"
             text_style "fhs"
-            action (Hide('menu_main'), Stop("music"), Call('main'))
+            action (Hide('menu_main'), Stop("music"), ShowMenu('main'))
 
 
 screen fh_ch:
     modal True
     vbox at fh_menu:
-        default n = 0
         spacing 30
         xalign 0.1
         yalign 0.5
         textbutton 'Лена' at fh_button:
             style 'fhs'
             text_style 'fhs'
-            hovered SetScreenVariable(n, 1)
+            
         textbutton 'Алиса' at fh_button:
             style 'fhs'
             text_style 'fhs'
-            hovered SetScreenVariable(n, 2)
+            
         textbutton 'Ульяна' at fh_button:
             style 'fhs'
             text_style 'fhs'
-            hovered SetScreenVariable(n, 3)
+            
         textbutton 'Славя' at fh_button:
             style 'fhs'
             text_style 'fhs'
-            hovered SetScreenVariable(n, 4)
+            
         textbutton 'Назад' at fh_button:
             style 'fhs'
             text_style 'fhs'
-            hovered SetScreenVariable(n, 0)
-            #hover_background '':
-                #xalign 0.0 yalign 0.0
-    showif n == 0:
-        pass
-        add 'main_img' at fh_mn
-    elif n == 1:
-        add 'un_main' at fh_mn
-    elif n == 2:
-        add 'dv_main' at fh_mn
-    elif n == 3:
-        add 'us_main' at fh_mn
-    elif n == 4:
-        add 'sl_main' at fh_mn
+            hover_background 'main_img' xalign 0.0 yalign 0.0
+            action Return()
+
             
 
 label menu_fh:
+    jump credits_fh
     call screen menu_main with dissolve
     jump four_horizons
 
 label credits_fh:
     scene black with dissolve
-    text credits_fh at truecenter with dissolve:
-        size 100
+    show text credits_fh_v at truecenter with dissolve
+    $renpy.pause(10)
     return

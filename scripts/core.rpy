@@ -136,6 +136,11 @@ init:
     image bg stadion = "mods/four_horizons/bg/stadion.jpg"
     image bg stadion2 = "mods/four_horizons/bg/stadion2.jpg"
 
+    image vi normal = ConditionSwitch(
+    "persistent.sprite_time=='sunset'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/IMG_8267.png",(0,0), "mods/IMG_8253.png",(0,0), "mods/IMG_8269.png"), im.matrix.tint(0.94, 0.82, 1.0) ),
+    "persistent.sprite_time=='night'",im.MatrixColor( im.Composite((900,1080), (0,0), "mods/IMG_8267.png",(0,0), "mods/IMG_8253.png",(0,0), "mods/IMG_8269.png"), im.matrix.tint(0.63, 0.78, 0.82) ),
+    True,im.Composite((900,1080), (0,0), "mods/IMG_8267.png",(0,0), "mods/IMG_8253.png",(0,0), "mods/IMG_8269.png") )
+
 
 init python:
     heart = 'mods/four_horizons/Музыка/ambi/heart.mp3'
