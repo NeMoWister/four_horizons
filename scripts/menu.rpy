@@ -101,32 +101,14 @@ screen menu_main():
 
 
 screen fh_ch:
-    modal True
-    vbox at fh_menu:
-        spacing 30
-        xalign 0.1
-        yalign 0.5
-        textbutton 'Лена' at fh_button:
-            style 'fhs'
-            text_style 'fhs'
-            
-        textbutton 'Алиса' at fh_button:
-            style 'fhs'
-            text_style 'fhs'
-            
-        textbutton 'Ульяна' at fh_button:
-            style 'fhs'
-            text_style 'fhs'
-            
-        textbutton 'Славя' at fh_button:
-            style 'fhs'
-            text_style 'fhs'
-            
-        textbutton 'Назад' at fh_button:
-            style 'fhs'
-            text_style 'fhs'
-            hover_background 'main_img' xalign 0.0 yalign 0.0
-            action Return()
+    imagemap:
+        idle 'mods/four_horizons/bg/idle.jpg'
+        hover 'mods/four_horizons/bg/hover.jpg'
+
+        hotspot (0, 0, 480, 1080) action Jump(Four_horizons_Maxim_story_prologue)
+        hotspot (481, 0, 480, 1080) action Jump(four_horizons_dv)
+        hotspot (961, 0, 480, 1080) action Jump(Four_horizons_Kirril_story_prologue)
+        hotspot (1441, 0, 480, 1080) action Jump(four_horizons)
 
             
 
