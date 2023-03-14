@@ -1,4 +1,4 @@
-init:
+
 
 label four_horizons_dv:
     call credits_fh
