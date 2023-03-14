@@ -97,7 +97,7 @@ screen menu_main():
         textbutton "Выход" at fh_button:
             style "fhs"
             text_style "fhs"
-            action (Hide('menu_main'), Stop("music"), ShowMenu('main'))
+            action (Hide('menu_main', dissolve), Stop("music"), ShowMenu('main'))
 
 
 screen fh_ch:
@@ -110,12 +110,15 @@ screen fh_ch:
         hotspot (961, 0, 480, 1080) action Jump(Four_horizons_Kirril_story_prologue)
         hotspot (1441, 0, 480, 1080) action Jump(four_horizons)
 
+        key "Esc" action Hide('fh_ch', dissolve)
+
             
 
 label menu_fh:
-    Play("music", "mods/four_horizons/music/Z FEEL-Z-Hear The Wind-kissvk.com.mp3")
+    play music "mods/four_horizons/music/Z FEEL-Z-Hear The Wind-kissvk.com.mp3" fadein 3
     call screen menu_main with dissolve
-    jump four_horizons
+    stop music fadeout 3
+    return
 
 label credits_fh:
     scene black with dissolve
