@@ -76,6 +76,8 @@ transform fh_button:
     
 
 screen menu_main():
+    tag test
+    modal True
     add "main_img"
     add (CutM().sm)
     vbox at fh_menu:
@@ -101,16 +103,18 @@ screen menu_main():
 
 
 screen fh_ch:
+    tag test
+    modal True
     imagemap:
         idle 'mods/four_horizons/bg/idle.jpg'
         hover 'mods/four_horizons/bg/hover.jpg'
 
-        hotspot (0, 0, 480, 1080) action (Jump('Four_horizons_Maxim_story_prologue'), Stop("music"))
-        hotspot (481, 0, 480, 1080) action (Jump('four_horizons_dv'), Stop("music"))
-        hotspot (961, 0, 480, 1080) action (Jump('Four_horizons_Kirril_story_prologue'), Stop("music"))
-        hotspot (1441, 0, 480, 1080) action (Jump('four_horizons'), Stop("music"))
+        hotspot (0, 0, 480, 1080) action Jump('Four_horizons_Maxim_story_prologue'), Stop("music"), Hide('menu_main', dissolve), Hide('fh_ch', dissolve)
+        hotspot (481, 0, 480, 1080) action Jump('four_horizons_dv'), Stop("music"), Hide('menu_main', dissolve), Hide('fh_ch', dissolve)
+        hotspot (961, 0, 480, 1080) action Jump('Four_horizons_Kirril_story_prologue'), Stop("music"), Hide('menu_main', dissolve), Hide('fh_ch', dissolve)
+        hotspot (1441, 0, 480, 1080) action Jump('four_horizons'), Stop("music"), Hide('menu_main', dissolve), Hide('fh_ch', dissolve)
 
-        key "K_ESCAPE" action Hide('fh_ch', dissolve)
+        key "K_ESCAPE" action Return()
 
             
 
@@ -121,6 +125,7 @@ label menu_fh:
     return
 
 label credits_fh:
+    stop music fadeout 0.5
     scene black with dissolve
     show text credits_fh_v at truecenter with dissolve
     $renpy.pause(10)
