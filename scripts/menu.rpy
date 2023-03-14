@@ -87,7 +87,7 @@ screen menu_main():
         textbutton "Начать" at fh_button:
             style "fhs"
             text_style "fhs"
-            action ShowMenu('fh_ch')
+            action Jump('fh_chl')
         textbutton "Загрузить" at fh_button:
             style "fhs"
             text_style "fhs"
@@ -99,7 +99,7 @@ screen menu_main():
         textbutton "Выход" at fh_button:
             style "fhs"
             text_style "fhs"
-            action (Hide('menu_main', dissolve), Stop("music"), Return())
+            action Jump('returner')
 
 
 screen fh_ch:
@@ -109,14 +109,21 @@ screen fh_ch:
         idle 'mods/four_horizons/bg/idle.jpg'
         hover 'mods/four_horizons/bg/hover.jpg'
 
-        hotspot (0, 0, 480, 1080) action Jump('Four_horizons_Maxim_story_prologue'), Stop("music"), Hide('menu_main', dissolve), Hide('fh_ch', dissolve)
-        hotspot (481, 0, 480, 1080) action Jump('four_horizons_dv'), Stop("music"), Hide('menu_main', dissolve), Hide('fh_ch', dissolve)
-        hotspot (961, 0, 480, 1080) action Jump('Four_horizons_Kirril_story_prologue'), Stop("music"), Hide('menu_main', dissolve), Hide('fh_ch', dissolve)
-        hotspot (1441, 0, 480, 1080) action Jump('four_horizons'), Stop("music"), Hide('menu_main', dissolve), Hide('fh_ch', dissolve)
+        hotspot (0, 0, 480, 1080) action [Jump('Four_horizons_Maxim_story_prologue'), Stop("music"), Hide('menu_main', dissolve), Hide('fh_ch', dissolve)]
+        hotspot (481, 0, 480, 1080) action [Jump('four_horizons_dv'), Stop("music"), Hide('menu_main', dissolve), Hide('fh_ch', dissolve)]
+        hotspot (961, 0, 480, 1080) action [Jump('Four_horizons_Kirril_story_prologue'), Stop("music"), Hide('menu_main', dissolve), Hide('fh_ch', dissolve)]
+        hotspot (1441, 0, 480, 1080) action [Jump('four_horizons'), Stop("music"), Hide('menu_main', dissolve), Hide('fh_ch', dissolve)]
 
-        key "K_ESCAPE" action Return()
+        key "K_ESCAPE" action Jump('returner')
 
             
+label returner:
+    return
+
+label fh_chl:
+    call screen fh_ch with dissolve
+    return
+
 
 label menu_fh:
     play music "mods/four_horizons/music/Z FEEL-Z-Hear The Wind-kissvk.com.mp3" fadein 3
