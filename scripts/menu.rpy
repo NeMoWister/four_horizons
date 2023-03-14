@@ -97,7 +97,7 @@ screen menu_main():
         textbutton "Выход" at fh_button:
             style "fhs"
             text_style "fhs"
-            action (Hide('menu_main', dissolve), Stop("music"), ShowMenu('main'))
+            action (Hide('menu_main', dissolve), Stop("music"), Return())
 
 
 screen fh_ch:
