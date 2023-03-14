@@ -1,6 +1,4 @@
 init:
-    $ mods["four_horizons"] = u"Четыре Горизонта. Лена."
-    $ config.developer = True
 
 label four_horizons:
     call credits_fh

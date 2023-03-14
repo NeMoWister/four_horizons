@@ -1,5 +1,4 @@
 init:
-    $ mods["Four_horizons_Maxim_story_prologue"]=u"Четыре горизонта (История Максима)."
     
     #Персонажи
     $ ung = Character(u'Девушка', color="B956FF", what_color="E2C778", drop_shadow = [ (2, 2) ],drop_shadow_color = "#000",what_drop_shadow = [ (2, 2) ],what_drop_shadow_color = "#000")
