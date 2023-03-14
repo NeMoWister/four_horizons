@@ -6,8 +6,8 @@ init:
     image un_main = im.Scale("mods/four_horizons/cg/dance_night.png", 1920, 1080)
     $ mods["menu_fh"]=u"Четыре горизонта. Меню."
 
-    $ credits_fh = '{color='#ff0000'}Дисклеймер{/color}.\nВсе истории и персонажи является фантазией сценариста.\nЛюбое совпадение с реальностью - чистая случайность.'
-    $ credits_fh_v2 = '''
+    $ disclamer_fh = '{color='#ff0000'}Дисклеймер{/color}.\nВсе истории и персонажи является фантазией сценариста.\nЛюбое совпадение с реальностью - чистая случайность.'
+    $ disclamer_fh_v2 = '''
     Дисклеймер.
     Перед началом игры, пожалуйста, ознакомьтесь с данной информацией.
 
@@ -83,7 +83,6 @@ transform fh_button:
     
 
 screen menu_main():
-    timer 0.00001 action Play("music", "mods/four_horizons/music/Z FEEL-Z-Hear The Wind-kissvk.com.mp3")
     add "main_img"
     add (CutM().sm)
     vbox at fh_menu:
@@ -151,6 +150,7 @@ screen fh_ch:
             
 
 label menu_fh:
+    Play("music", "mods/four_horizons/music/Z FEEL-Z-Hear The Wind-kissvk.com.mp3")
     call screen menu_main with dissolve
     jump four_horizons
 
