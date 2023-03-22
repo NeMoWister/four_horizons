@@ -5,7 +5,7 @@ init:
     image sl_main = im.Scale("mods/four_horizons/cg/IMG_7353.png", 1920, 1080)
     image un_main = im.Scale("mods/four_horizons/cg/dance_night.png", 1920, 1080)
     $ mods["menu_fh"]=u"Четыре горизонта. Меню."
-
+    $ config.developer = True
     $ credits_fh = '{color=#ff0000}{size=120}Дисклеймер{/color}{/size}.\nВсе истории и персонажи является фантазией сценариста.\nЛюбое совпадение с реальностью - чистая случайность.'
     $ credits_fh_v = '{color=#ff0000}{size=60}Дисклеймер{/color}{/size}\n\n{size=40}Перед началом игры, пожалуйста, ознакомьтесь с данной информацией.\n\nЭта игра предназначена только для развлекательных целей и не имеет никакой связи с реальностью.\nВсе персонажи, события и диалоги являются вымышленными и не являются настоящими.{/size}'
 
@@ -76,6 +76,8 @@ transform fh_button:
     
 
 screen menu_main():
+    tag test
+    modal True
     add "main_img"
     add (CutM().sm)
     vbox at fh_menu:
@@ -85,7 +87,7 @@ screen menu_main():
         textbutton "Начать" at fh_button:
             style "fhs"
             text_style "fhs"
-            action ShowMenu('fh_ch')
+            action Jump('fh_chl')
         textbutton "Загрузить" at fh_button:
             style "fhs"
             text_style "fhs"
@@ -97,22 +99,31 @@ screen menu_main():
         textbutton "Выход" at fh_button:
             style "fhs"
             text_style "fhs"
-            action (Hide('menu_main', dissolve), Stop("music"), Return())
+            action Jump('returner')
 
 
 screen fh_ch:
+    tag test
+    modal True
     imagemap:
         idle 'mods/four_horizons/bg/idle.jpg'
         hover 'mods/four_horizons/bg/hover.jpg'
 
-        hotspot (0, 0, 480, 1080) action Jump(Four_horizons_Maxim_story_prologue)
-        hotspot (481, 0, 480, 1080) action Jump(four_horizons_dv)
-        hotspot (961, 0, 480, 1080) action Jump(Four_horizons_Kirril_story_prologue)
-        hotspot (1441, 0, 480, 1080) action Jump(four_horizons)
+        hotspot (0, 0, 480, 1080) action [Jump('Four_horizons_Maxim_story_prologue'), Stop("music"), Hide('menu_main', dissolve), Hide('fh_ch', dissolve)]
+        hotspot (481, 0, 480, 1080) action [Jump('four_horizons_dv'), Stop("music"), Hide('menu_main', dissolve), Hide('fh_ch', dissolve)]
+        hotspot (961, 0, 480, 1080) action [Jump('Four_horizons_Kirril_story_prologue'), Stop("music"), Hide('menu_main', dissolve), Hide('fh_ch', dissolve)]
+        hotspot (1441, 0, 480, 1080) action [Jump('four_horizons'), Stop("music"), Hide('menu_main', dissolve), Hide('fh_ch', dissolve)]
 
-        key "Esc" action Hide('fh_ch', dissolve)
+        key "K_ESCAPE" action Jump('returner')
 
             
+label returner:
+    return
+
+label fh_chl:
+    call screen fh_ch with dissolve
+    return
+
 
 label menu_fh:
     play music "mods/four_horizons/music/Z FEEL-Z-Hear The Wind-kissvk.com.mp3" fadein 3
@@ -121,6 +132,7 @@ label menu_fh:
     return
 
 label credits_fh:
+    stop music fadeout 0.5
     scene black with dissolve
     show text credits_fh_v at truecenter with dissolve
     $renpy.pause(10)

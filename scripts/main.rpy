@@ -1,5 +1,3 @@
-init:
-
 label four_horizons:
     call credits_fh
     scene black with dissolve

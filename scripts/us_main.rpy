@@ -4478,7 +4478,7 @@ label Four_horizons_Maxim_story_day1:
     "Каждая история по-своему уникальна. И мы завершаем любую историю только лишь для того, чтобы открыть следующую главу в нашей жизни."
     "(Я искренне благодарю всех за прочтение данной истории и желаю вам всего самого лучшего!)"
 
-    label Four_horizons_Maxim_story_prologue:
+label Four_horizons_Maxim_story_prologue:
     call credits_fh
     $ save_name = ('Четыре горизонта.\nИстория Максима.\nПролог.\nНеужели отдых?')
     $ persistent.sprite_time = "day"
