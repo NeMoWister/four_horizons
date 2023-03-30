@@ -130,10 +130,3 @@ label menu_fh:
     call screen menu_main with dissolve
     stop music fadeout 3
     return
-
-label credits_fh:
-    stop music fadeout 0.5
-    scene black with dissolve
-    show text credits_fh_v at truecenter with dissolve
-    $renpy.pause(10)
-    return
