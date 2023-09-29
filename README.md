@@ -40,7 +40,7 @@
 | [Пипидастр](https://vk.com/ppipiduster) | Художник |
 | [Sherma&Miller Everlasting Summer](https://vk.com/shermamiller18) | Фотошоп |
 
-## Модификация имеет материалы следующих модификаций:
+## Модификация использует материалы следующих модификаций:
 * Свобода или Счастье;
 * Проклятый лагерь;
 * Ламповое лето;
@@ -64,7 +64,7 @@ https://store.steampowered.com/about/
 #### Установите Бесконечное Лето:
 https://store.steampowered.com/app/331470/Everlasting_Summer/
 #### Установите мод:
-Перейдите в мастерскую, найдите в поиске "Четыре горизонта" или воспользуйтесь [ссылкой на мод](https://steamcommunity.com/sharedfiles/filedetails/?id=2881372835).
+Перейдите в мастерскую, найдите в поиске "Четыре горизонта" или воспользуйтесь [ссылкой на мод](https://steamcommunity.com/sharedfiles/filedetails/?id=2881372835). Нажмите кнопку "подписаться".
 #### Приятной игры.
 
 ### Non-Steam
