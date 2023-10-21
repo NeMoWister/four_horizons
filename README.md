@@ -71,5 +71,5 @@ https://store.steampowered.com/app/331470/Everlasting_Summer/
 #### Установите Бесконечное Лето:
 Найдите в интернете и установите Everlasting Summer или воспользуйтесь [ссылкой](https://rutracker.net/forum/viewtopic.php?t=4621080). Работоспособность не гарантируется!
 #### Клонируйте репозиторий:
-`git clone https://github.com/yourusername/your-project.git` в папку everlasting_summer/game.
+`git clone https://github.com/NeMoWister/four_horizons.git` в папку everlasting_summer/game.
 #### Приятной игры.
