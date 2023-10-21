@@ -30,7 +30,7 @@
 |---------------------|---------------------|
 | [VitoTheКняZz](https://vk.com/vitotheknyazzpublic) | Сценарист, автор идеи, редактор |
 | [NeMoWister](https://vk.com/nemowister) | Кодер, вдохновитель на модификацию |
-| [Лена](https://steamcommunity.com/id/lena_sova) | Кодер, учитель по кодингу. |
+| [Лена](https://steamcommunity.com/id/lena_sova) | Кодер |
 | [Андрей Серебряников](https://vk.com/chitatidelat) | Фотошоп |
 | Наташа Попова | Редактор |
 | [Yan Shpitalnik](https://vk.com/yanshpitalnikmusic) | Музыкант |
