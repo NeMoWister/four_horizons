@@ -1,20 +1,5 @@
 # Четыре Горизонта
 
-## В разработке приняли участие:
-| Имя(Никнейм) | Роль |
-|---------------------|---------------------|
-| [VitoTheКняZz](https://vk.com/vitotheknyazzpublic) | Сценарист, автор идеи, редактор |
-| [NeMoWister](https://vk.com/nemowister) | Кодер, вдохновитель на модификацию |
-| [Лена](https://steamcommunity.com/id/lena_sova) | Кодер |
-| [Андрей Серебряников](https://vk.com/chitatidelat) | Фотошоп |
-| Наташа Попова | Редактор |
-| [Yan Shpitalnik](https://vk.com/yanshpitalnikmusic) | Музыкант |
-| [Мифия](https://vk.com/mifiya) | Художник |
-| [Ereest](https://vk.com/ereeststudio) | Художник |
-| [Krevetka Тян (ex.Krie_t Art)](https://vk.com/krietarts) | Художник |
-| [Пипидастр](https://vk.com/ppipiduster) | Художник |
-| [Sherma&Miller Everlasting Summer](https://vk.com/shermamiller18) | Фотошоп |
-
 ## Установка и запуск
 
 ### Steam
