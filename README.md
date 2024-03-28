@@ -32,4 +32,4 @@
 
 ## License
 
-Этот проект распространяется под [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.ru)
+Этот проект распространяется под лицензией [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.ru)
